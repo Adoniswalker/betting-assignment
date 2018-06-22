@@ -1,0 +1,72 @@
+html .bodyMain {
+  background-color: #4adc13 !important;
+}
+
+#live-root, #live-header-wrapper {
+  background: #229f0c;
+}
+
+.bodyMainLive {
+  background: rgba(36, 165, 7, 0.79);
+}
+
+.bodyMain #divHeader, .bodyMainLive #divHeader {
+  background: #3a9c10;
+}
+
+.bodyMain .container_TopMenu, .bodyMainLive .container_TopMenu {
+  background: #4dcb13;
+}
+
+.GMT_content_wrapper {
+  box-shadow: none;
+  margin-top: 3px;
+}
+
+.tblMenu > ul > li {
+  line-height: 36px;
+  padding-top: 3px;
+}
+
+.bodyMain #divHeader .Tabs ul li a:hover, .bodyMainLive #divHeader .Tabs ul li a:hover {
+  background: #3a9c10;
+}
+
+.bodyMain #divHeader .Tabs ul li a.sel, .bodyMainLive #divHeader .Tabs ul li a.sel {
+  background: #3a9c10;
+}
+
+.bodyMain.Logged .bannerHome {
+   background-color: #3a9c10;
+   background-image: url(https://cnt.betin.co.ke/img/site/desktop/background/background_karibu_colour.jpg);
+   background-attachment: scroll;
+   background-position: center 0;
+   background-repeat: no-repeat;
+}
+
+.bodyMain.Anonymous .bannerHome {
+   background-color: #3a9c10;
+   background-image: url(https://cnt.betin.co.ke/img/site/desktop/background/background_karibu_colour.jpg);
+   background-attachment: scroll;
+   background-position: center 0;
+   background-repeat: no-repeat;
+}
+
+.bodyMain #divMain {
+  margin-top:0px;
+}
+
+.bodyMain .divMainHome {
+  overflow: auto;
+}
+
+.bodyMain.Utente #divHeader .Logo, .bodyMainLive.Utente #divHeader .Logo  {
+  background-image: url(//cnt.betin.co.ke/img/site/desktop/header_logo.png);
+  width: 168px;
+  height: 61px;
+}
+
+.bodyMain #divHeader .Logo a, .bodyMainLive #divHeader .Logo a {
+  width: 168px;
+  height: 61px;
+}

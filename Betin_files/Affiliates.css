@@ -1,0 +1,28 @@
+﻿#Affiliates { width: 888px; background-color: Black; margin: 0 auto; padding: 0 10px; }
+#Affiliates .text_input { width: 140px; float: left; }
+#Affiliates img { display: block; margin: 0 auto; }
+#Affiliates #LeftBox,
+#Affiliates #MiddleBox,
+#Affiliates #RightBox { float: left; border: 1px solid #ffba00; background: #000; height: 400px; }
+#Affiliates #LeftBox { width: 22%; margin-right: 5px; }
+#Affiliates #MiddleBox { width: 38%; margin-right: 5px; }
+#Affiliates #RightBox { width: 38%; overflow: visible; }
+#Affiliates #LeftBox div,
+#Affiliates #MiddleBox div,
+#Affiliates #RightBox div { padding: 4px 5px 2px 5px; }
+#Affiliates #RightBox div { overflow: visible; }
+#Affiliates h1 { display: block; width: 100%; height: 28px; background: url(images/Affiliates/title_bg.jpg) top repeat-x; border-bottom: 1px solid #ffba00; text-align: center; line-height: 26px; }
+#Affiliates h1,
+#Affiliates h2 { font-size: 10pt; color: #ffba00; font-weight: normal; }
+#Affiliates h2 { margin: 10px 0 10px 10px; }
+#Affiliates p { display: block; padding: 5px; }
+#Affiliates ul { margin-left: 10px; }
+#Affiliates li { padding-top: 5px; }
+#Affiliates .clear { clear: both; height: 1px; }
+#Affiliates .yellow { color: #ffba00; }
+#Affiliates label.floater { display: block; float: left; width: 50%; padding-top: 2px; }
+#Affiliates select { float: right; width: 140px; overflow: visible; }
+#Affiliates textarea,
+#Affiliates select { background: white; margin: 0 auto; margin-top: 5px; }
+#Affiliates #SubmitBttn { text-align: right; margin-top: 7px; margin-right: 5px; width: 100%; }
+html > body #Affiliates #MiddleBox div { padding-bottom: 0px; }

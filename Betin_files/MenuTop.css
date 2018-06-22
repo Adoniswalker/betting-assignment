@@ -1,0 +1,18 @@
+﻿#divHeader .Menu { height: 16px; margin: 0; padding: 0; line-height: 16px; }
+#divHeader .MenuUpdate { position: absolute; left: 625px; top: 0px; white-space: nowrap; color: #ffffff; padding-right: 15px; font-size: 10px; }
+#divHeader .MenuUpdate DIV { display: inline; }
+
+/*Parent items*/
+.tblMenu UL { margin: 0; padding: 0; list-style-type: none; }
+.tblMenu > UL > LI { float: left; position: relative; line-height: 39px; font-size: 10px; }
+.tblMenu > UL > LI > A { display: block; color: #FFFFFF; text-decoration: none; margin: 0 20px 0 0; font-size: 12px; cursor: pointer; }
+.tblMenu > UL > LI > A.sel {color:#fbd115 }
+.tblMenu > UL > LI:hover > A { color: #ffffff; }
+.tblMenu > UL > LI > A:hover { color: #ffffff; text-decoration: underline; }
+
+/*child items*/
+.tblMenu > UL > LI UL { display: none; position: absolute; background-color: #dddee3; z-index: 2000; line-height: 18px; left: 0; top: 15px; border: solid 1px #abafb6; }
+.tblMenu > UL > LI UL LI { border-bottom: solid 1px #abafb6; white-space: nowrap; display: block; }
+.tblMenu > UL > LI:hover UL { display: block; }
+.tblMenu > UL > LI > UL > LI A { cursor: pointer; text-transform: lowercase; font-size: 11px; color: #000000; text-decoration: none; display: block; padding: 0 20px 0 10px; }
+.tblMenu > UL > LI > UL > LI:hover { background-color: #b8c4d4; display: block; }

@@ -1,0 +1,63 @@
+Type.registerNamespace('ISBets.WebPages.Controls');
+ISBets.WebPages.Controls.CouponWS=function() {
+ISBets.WebPages.Controls.CouponWS.initializeBase(this);
+this._timeout = 0;
+this._userContext = null;
+this._succeeded = null;
+this._failed = null;
+}
+ISBets.WebPages.Controls.CouponWS.prototype={
+_get_path:function() {
+ var p = this.get_path();
+ if (p) return p;
+ else return ISBets.WebPages.Controls.CouponWS._staticInstance.get_path();},
+GetSaldo:function(IDUtente,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'GetSaldo',true,{IDUtente:IDUtente},succeededCallback,failedCallback,userContext); },
+GetDisbilitazioneGiroconti:function(IDUtente,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'GetDisbilitazioneGiroconti',true,{IDUtente:IDUtente},succeededCallback,failedCallback,userContext); },
+GetStatoCoupon:function(IDCoupon,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'GetStatoCoupon',true,{IDCoupon:IDCoupon},succeededCallback,failedCallback,userContext); },
+CheckAttesa:function(IDCoupon,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'CheckAttesa',true,{IDCoupon:IDCoupon},succeededCallback,failedCallback,userContext); },
+CouponPromozioneOK:function(IDCoupon,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'CouponPromozioneOK',false,{IDCoupon:IDCoupon},succeededCallback,failedCallback,userContext); },
+GetStatoCouponAsincrono:function(IDCouponAsincrono,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'GetStatoCouponAsincrono',true,{IDCouponAsincrono:IDCouponAsincrono},succeededCallback,failedCallback,userContext); },
+EnableTxtCF:function(IDUtente,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'EnableTxtCF',true,{IDUtente:IDUtente},succeededCallback,failedCallback,userContext); },
+GetCF:function(IDUtente,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'GetCF',true,{IDUtente:IDUtente},succeededCallback,failedCallback,userContext); },
+Cashout_CheckOut:function(IDUtente,IDCoupon,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'Cashout_CheckOut',false,{IDUtente:IDUtente,IDCoupon:IDCoupon},succeededCallback,failedCallback,userContext); },
+Cashout_PayCoupon:function(IDUtente,IDCoupon,Amount,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'Cashout_PayCoupon',false,{IDUtente:IDUtente,IDCoupon:IDCoupon,Amount:Amount},succeededCallback,failedCallback,userContext); },
+isUtenteCassa:function(IDUtente,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'isUtenteCassa',true,{IDUtente:IDUtente},succeededCallback,failedCallback,userContext); }}
+ISBets.WebPages.Controls.CouponWS.registerClass('ISBets.WebPages.Controls.CouponWS',Sys.Net.WebServiceProxy);
+ISBets.WebPages.Controls.CouponWS._staticInstance = new ISBets.WebPages.Controls.CouponWS();
+ISBets.WebPages.Controls.CouponWS.set_path = function(value) { ISBets.WebPages.Controls.CouponWS._staticInstance.set_path(value); }
+ISBets.WebPages.Controls.CouponWS.get_path = function() { return ISBets.WebPages.Controls.CouponWS._staticInstance.get_path(); }
+ISBets.WebPages.Controls.CouponWS.set_timeout = function(value) { ISBets.WebPages.Controls.CouponWS._staticInstance.set_timeout(value); }
+ISBets.WebPages.Controls.CouponWS.get_timeout = function() { return ISBets.WebPages.Controls.CouponWS._staticInstance.get_timeout(); }
+ISBets.WebPages.Controls.CouponWS.set_defaultUserContext = function(value) { ISBets.WebPages.Controls.CouponWS._staticInstance.set_defaultUserContext(value); }
+ISBets.WebPages.Controls.CouponWS.get_defaultUserContext = function() { return ISBets.WebPages.Controls.CouponWS._staticInstance.get_defaultUserContext(); }
+ISBets.WebPages.Controls.CouponWS.set_defaultSucceededCallback = function(value) { ISBets.WebPages.Controls.CouponWS._staticInstance.set_defaultSucceededCallback(value); }
+ISBets.WebPages.Controls.CouponWS.get_defaultSucceededCallback = function() { return ISBets.WebPages.Controls.CouponWS._staticInstance.get_defaultSucceededCallback(); }
+ISBets.WebPages.Controls.CouponWS.set_defaultFailedCallback = function(value) { ISBets.WebPages.Controls.CouponWS._staticInstance.set_defaultFailedCallback(value); }
+ISBets.WebPages.Controls.CouponWS.get_defaultFailedCallback = function() { return ISBets.WebPages.Controls.CouponWS._staticInstance.get_defaultFailedCallback(); }
+ISBets.WebPages.Controls.CouponWS.set_enableJsonp = function(value) { ISBets.WebPages.Controls.CouponWS._staticInstance.set_enableJsonp(value); }
+ISBets.WebPages.Controls.CouponWS.get_enableJsonp = function() { return ISBets.WebPages.Controls.CouponWS._staticInstance.get_enableJsonp(); }
+ISBets.WebPages.Controls.CouponWS.set_jsonpCallbackParameter = function(value) { ISBets.WebPages.Controls.CouponWS._staticInstance.set_jsonpCallbackParameter(value); }
+ISBets.WebPages.Controls.CouponWS.get_jsonpCallbackParameter = function() { return ISBets.WebPages.Controls.CouponWS._staticInstance.get_jsonpCallbackParameter(); }
+ISBets.WebPages.Controls.CouponWS.set_path("/Controls/CouponWS.asmx");
+ISBets.WebPages.Controls.CouponWS.GetSaldo= function(IDUtente,onSuccess,onFailed,userContext) {ISBets.WebPages.Controls.CouponWS._staticInstance.GetSaldo(IDUtente,onSuccess,onFailed,userContext); }
+ISBets.WebPages.Controls.CouponWS.GetDisbilitazioneGiroconti= function(IDUtente,onSuccess,onFailed,userContext) {ISBets.WebPages.Controls.CouponWS._staticInstance.GetDisbilitazioneGiroconti(IDUtente,onSuccess,onFailed,userContext); }
+ISBets.WebPages.Controls.CouponWS.GetStatoCoupon= function(IDCoupon,onSuccess,onFailed,userContext) {ISBets.WebPages.Controls.CouponWS._staticInstance.GetStatoCoupon(IDCoupon,onSuccess,onFailed,userContext); }
+ISBets.WebPages.Controls.CouponWS.CheckAttesa= function(IDCoupon,onSuccess,onFailed,userContext) {ISBets.WebPages.Controls.CouponWS._staticInstance.CheckAttesa(IDCoupon,onSuccess,onFailed,userContext); }
+ISBets.WebPages.Controls.CouponWS.CouponPromozioneOK= function(IDCoupon,onSuccess,onFailed,userContext) {ISBets.WebPages.Controls.CouponWS._staticInstance.CouponPromozioneOK(IDCoupon,onSuccess,onFailed,userContext); }
+ISBets.WebPages.Controls.CouponWS.GetStatoCouponAsincrono= function(IDCouponAsincrono,onSuccess,onFailed,userContext) {ISBets.WebPages.Controls.CouponWS._staticInstance.GetStatoCouponAsincrono(IDCouponAsincrono,onSuccess,onFailed,userContext); }
+ISBets.WebPages.Controls.CouponWS.EnableTxtCF= function(IDUtente,onSuccess,onFailed,userContext) {ISBets.WebPages.Controls.CouponWS._staticInstance.EnableTxtCF(IDUtente,onSuccess,onFailed,userContext); }
+ISBets.WebPages.Controls.CouponWS.GetCF= function(IDUtente,onSuccess,onFailed,userContext) {ISBets.WebPages.Controls.CouponWS._staticInstance.GetCF(IDUtente,onSuccess,onFailed,userContext); }
+ISBets.WebPages.Controls.CouponWS.Cashout_CheckOut= function(IDUtente,IDCoupon,onSuccess,onFailed,userContext) {ISBets.WebPages.Controls.CouponWS._staticInstance.Cashout_CheckOut(IDUtente,IDCoupon,onSuccess,onFailed,userContext); }
+ISBets.WebPages.Controls.CouponWS.Cashout_PayCoupon= function(IDUtente,IDCoupon,Amount,onSuccess,onFailed,userContext) {ISBets.WebPages.Controls.CouponWS._staticInstance.Cashout_PayCoupon(IDUtente,IDCoupon,Amount,onSuccess,onFailed,userContext); }
+ISBets.WebPages.Controls.CouponWS.isUtenteCassa= function(IDUtente,onSuccess,onFailed,userContext) {ISBets.WebPages.Controls.CouponWS._staticInstance.isUtenteCassa(IDUtente,onSuccess,onFailed,userContext); }

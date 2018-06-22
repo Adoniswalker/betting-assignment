@@ -1,0 +1,17 @@
+﻿.ContenitorePromotion { border: 1px solid #555; padding: 0; margin: 0 0 5px 0; background-color: #222; }
+.HeaderPromotion { position: relative; height: 112px; overflow: hidden; background-image: url('images/promotion_bg.png'); background-repeat: no-repeat; background-position: left top; }
+.HeaderSxPromotion { position: absolute; top: 0; left: 0; }
+.HeaderSxPromotion img { margin: 5px; }
+.HeaderDxPromotion { width: 295px; height: 107px; position: absolute; right: 0; top: 5px; }
+.HeaderTitoloPromotion { display: block; text-transform: uppercase; font-size: 12px; font-weight: bold; margin: 0 0 5px 0; color: #ffbb03; width: 290px; height: 18px; line-height: 18px; background-image: url('images/promotions_line.png'); background-repeat: no-repeat; background-position: left bottom; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.HeaderTestoPromotion { display: block; font-size: 11px; padding: 3px; width: 284px; height: 60px; overflow: hidden; color: #eee; }
+.CloseContentPromotion,
+.detailBtnOpen { font-size: 11px; font-weight: bold; text-align: right; cursor: pointer; padding: 0 15px 0 0; background-image: url('images/Icons/detail_up.png'); background-position: right; background-repeat: no-repeat; margin: 0 7px 5px 0; }
+.detailBtnOpen { background-image: url('images/Icons/detail.png'); }
+
+.promotionsBtn { position: absolute; bottom: 0; right: 0; background-image: url('images/promotionsBtn.png'); background-position: right; background-repeat: no-repeat; width: 100px; height: 26px; z-index: 1; }
+#g_w_PC_ctl01_upPromozioni br { font-size: 0; line-height: 0; }
+.ContentPromotionImage { }
+.ContentPromotionHtml { padding: 0 10px 20px 10px; }
+#divTitolo { background-color: Black; height: 18px; line-height: 18px; font-weight: bold; color: #ffbb03; font-size: 11px; text-transform: uppercase; text-align: center; margin: 0 0 0px 0; }
+.PromotionsVuoto { width: 541px; text-align: center; font-weight: bold; color: #FFFFFF; }

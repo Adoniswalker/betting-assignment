@@ -1,0 +1,159 @@
+﻿.tblDati { margin: 0; }
+.SearchControlsContainerStyle { width: 100%; }
+
+/*BARRA PER NACONDERE I FILTRI*/
+.SearchTitleStyle { color: #ffffff; text-transform: uppercase; padding: 0 0 0 0; font-weight: bold; display: none; }
+.SearchTitleStyle a { color: #5b5555; text-decoration: none; }
+.SearchMinimizeStyle { text-align: right; padding: 0 0 3px 0; font-size: 0; }
+.SearchContainerStyle { width: 100%; color: #000000; padding: 0 0 0 0; font-size: 12px; }
+.SearchSectionStyle { color: #42464c; }
+.SearchDescStyle { font-size: 12px; font-weight: bold; width: 30%; padding-left: 10px; }
+.SearchDescStyle .Dati { position: absolute; top: 0px; right: 0px; }
+
+.ClickPageStyle { width: 100%; padding: 0 0 0 0; font-size: 11px; }
+.ClickSectionStyle { background-image: url(images/linea_qt_01.gif); background-repeat: repeat-x; background-position: left bottom; color: #000000; }
+.ClickDescStyle { font-size: 11px; font-weight: bold; width: 30%; color: #ffffff; text-align: center; padding-bottom: 4px; background-color: #005ea1; }
+.ClickDescStyle .Dati { position: absolute; top: 0px; right: 0px; }
+
+.SearchControlsStyle { text-align: left; font-size: 12px; }
+
+.SearchButtonsStyle { width: 100%; background-color: #fff; height: 33px; }
+.SearchButtonsStyle .tdSrcSX { text-align: left; width: 100%; }
+.SearchButtonsStyle .tdSrcDX { text-align: right; }
+
+.divDg,
+.divDgResults { margin: 0 0 0 0; }
+.divDgResults { margin: 0; }
+.RisultatiSportStyle { color: #FFFFFF; font-weight: bold; padding: 2px 0 2px 10px; background-color: #005ea1; text-transform: uppercase; text-align: center; }
+.dgStyle,
+.RisultatiTbl { font-size: 12px; border-style: none; font-weight: bold; }
+.dgHdrStyle,
+.RisultatiGruppiStyle { font-size: 11px; background-color: #005ea1; color: #ffffff; height: 29px; text-align: left; }
+.RisultatiGruppiStyle { background-color: #e1e1e1; padding-left: 5px; font-size: 12px; color: #22314e; font-weight: bold; }
+.dgHdrStyle TH { padding: 0 2px; text-align: center; }
+.dgHdrStyle a { color: #fff; text-decoration: none; }
+.dgHdrStyle a:hover { text-decoration: underline; }
+
+.dgSubHdrStyle,
+.RisultatiHeader { font-size: 12px; color: #42464c; height: 18px; }
+.dgAItemStyle,
+.RisultatiAltItem { height: 32px; background-color: #fff; color: #42464c; border-bottom: 1px solid #dfe1e3; }
+.dgItemStyle, .RisultatiItem { height: 32px; color: #42464c; background-color: #fff; border-bottom: 1px solid #dfe1e3; }
+.dgItemStyle TD,
+.dgAItemStyle TD { padding-left: 2px; }
+.dgItemStyle a:hover,
+.dgAItemStyle a:hover { color: #005ea1; }
+.dgItemStyle a,
+.dgAItemStyle a { text-decoration: none; color: #42464c; font-weight: bold; }
+.dgPagerStyle { background-color: #005ea1; }
+.dgPagerStyle DIV { padding-right: 10px; font-weight: bold; color: #fff; }
+.dgPagerStyle a { text-decoration: none; color: #fff; font-weight: bold; display: block; padding: 0 3px 0 3px; }
+.dgPagerStyle td span { text-decoration: none; color: #ffffff; font-weight: bold; border-bottom: 1px solid #fff; display: block; padding: 0 3px 0 3px; }
+.dgEmptyStyle { text-align: center; font-size: 12px; height: 50px; color: #42464c; }
+.dgEmptyStyle TD { border: none; }
+.UserPopUpSrc { border-bottom: 1px solid #ccc; }
+
+.dgTotalsStyle { background-color: #f2f2f2; height: 25px; }
+
+.dgTotalsStyle TD { border-bottom: 1px solid #ffffff; }
+.dgTotalsImpPos, .dgTotalsImpNeg { text-align: right; padding-right: 2px; font-weight: bold; color: #005ea1; }
+.dgTotalsImpNeg { color: #005ea1; }
+
+/* -------------------- STILI PAGINE CON DATI (NewUser..) --------------------------- */
+.RiquadroNews.Reg .tblDati .cellaSx { width: 280px; }
+.RiquadroNews.Reg .tblDati .cellaSx.Sep { width: 5px; }
+
+.cellaSx { background-color: #ffffff; padding-left: 10px; font-size: 12px; color: #42464c; height: 33px; font-weight: bold; }
+.cellaSx.Sep,
+.nuovoUtente1 .cellaSx.Sep,
+.nuovoUtente2 .cellaSx.Sep,
+.nuovoUtente3 .cellaSx.Sep { padding: 0 5px 0 5px; }
+
+.cellaSx.Top,
+.nuovoUtente1 .cellaSx.Top,
+.nuovoUtente2 .cellaSx.Top,
+.nuovoUtente3 .cellaSx.Top { padding-top: 4px; vertical-align: top; }
+
+.cellaDx { font-size: 12px; color: #42464c; padding-left: 10px; padding-right: 10px; }
+.cellaInfo { color: #42464c; padding: 10px; font-size: 12px; font-weight: bold; }
+.cellaSel{ 
+    cursor:pointer;
+	padding-left:10px;
+	padding-right:10px;
+	margin-right:10px;
+	white-space:nowrap; border-right:1px solid #fff; height:29px; text-transform:uppercase;
+	background-color:#fbd115;
+    }
+.cellaSel a { color: #000; font-weight: bold; text-decoration: none; }
+.cellaDeSel { cursor: pointer; padding-left: 10px; padding-right: 10px; white-space: nowrap; background: #3f444e; }
+.cellaDeSel a { color: #fff; font-weight: bold; text-decoration: none; font-size: 12px; text-transform: uppercase; }
+.tblTabs { width: 100%; margin-top: 10px; height: 29px; background-color: #fff; padding-left: 10px; }
+.SectionTitle { text-align: left; border-bottom: none; padding-left: 10px; background-color: #fbd115; color: #000; font-size: 12px; height: 29px; font-weight: bold; }
+
+/******************************************************************/
+.divNewUserWide { width: 907px; margin: 0 0 0 27px; background-image: none; background-position: right; background-repeat: repeat-y; padding: 2px; background-color: #ffffff; }
+.divNewUserWide .Riquadro { padding: 0; background-color: #ffffff; background-image: url(); }
+.divNewUserWide .Riquadro .TopSX { padding: 0; background-color: #000000; background-image: url(); }
+.divNewUserWide .Riquadro .CntSX { padding: 0; background-color: #ffffff; background-image: url(); }
+.divNewUserWide .Riquadro .TopDX H3 { text-align: left; margin: 0; }
+.nuovoUtente1, .nuovoUtente2, .nuovoUtente3 { float: left; margin: 4px 0 0 6px; border: 1px solid #5c4b1d; background-color: #ffffff; padding: 8px; height: 490px; }
+.nuovoUtente3 { clear: right; }
+.nuovoUtente1 { width: 327px; background-image: url(images/userNumb.jpg); background-position: bottom; background-repeat: no-repeat; }
+.nuovoUtente2 { width: 327px; background-image: url(images/userAt.jpg); background-position: bottom; background-repeat: no-repeat; }
+.nuovoUtente3 { width: 175px; }
+.nuovoUtente1 .cellaSx,
+.nuovoUtente2 .cellaSx,
+.nuovoUtente3 .cellaSx { background-color: #ffffff; font-size: 11px; color: #000000; height: 30px; font-weight: bold; padding: 0; background-image: url(); }
+.nuovoUtente1 .cellaDx,
+.nuovoUtente2 .cellaDx,
+.nuovoUtente3 .cellaDx { background-color: #ffffff; font-size: 11px; color: #000000; padding: 0; background-image: url(); }
+.nuovoUtente1 .tblDati,
+.nuovoUtente2 .tblDati,
+.nuovoUtente3 .tblDati { margin: 0; }
+
+.userSec1_it-IT,
+.userSec2_it-IT,
+.userSec3_it-IT,
+.userSec1_en-GB,
+.userSec2_en-GB,
+.userSec3_en-GB { height: 22px; padding-top: 10px; background-position: center; background-repeat: no-repeat; }
+.userSec1_it-IT { background-image: url(images/lang/userSec1.gif); }
+.userSec2_it-IT { background-image: url(images/lang/userSec2.gif); }
+.userSec3_it-IT { background-image: url(images/lang/userSec3.gif); }
+
+.userSec1_en-GB { background-image: url(images/lang/userSec1_en.gif); }
+.userSec2_en-GB { background-image: url(images/lang/userSec2_en.gif); }
+.userSec3_en-GB { background-image: url(images/lang/userSec3_en.gif); }
+
+.userBtnWide { height: 240px; }
+.NewUserInfo { font-size: 10px; color: #000000; margin: 0 0 10px 0; }
+.cellaInfoDwn { float: none; clear: left; text-align: center; background-color: #ffffff; }
+/* -------------------- FINE STILI PAGINE CON DATI (NewUser..) --------------------------- */
+
+.GridSubTotalStyle,
+.GridSubTotal { font-weight: bold; background-color: #4a4a4a; color: #FFFFFF; }
+.GridSubTotalStyle TD { border-top: 1px solid #272727; }
+
+/**MULTI HEADER**/
+.header_1 { background-color: #515353; background-image: none; color: #acafaf; text-align: center; background-image: url('images/multi_header_right.gif'); background-position: right top; background-repeat: repeat-y; border-collapse: separate; height: 16px; }
+.header_2 { background-color: #2c2d2d; color: #FFFFFF; font-weight: bold; text-align: center; background-image: url('images/multi_header_top.gif'); background-position: top; background-repeat: repeat-x; text-transform: uppercase; }
+.SectionTitleReport { text-align: center; border-bottom: none; padding: 0; background-color: #333; font-weight: bold; color: #fff; font-size: 12px; text-transform: uppercase; margin: 10px 0 1px 0; height: 29px; line-height: 29px; }
+.dgHdrImporti { text-align: right; padding-right: 5px; }
+
+.TextBoxNascita { width: 65px; }
+
+.UserListUid { width: 70px; overflow: hidden; }
+.UserListNome { width: 60px; overflow: hidden; }
+.UserListCognome { width: 60px; overflow: hidden; }
+
+.ImpProvvisorio { color: #000; }
+.ImpProvvisorioLegenda { color: #000; background-image: url('images/icons/campo_provv.png'); background-position: left center; padding: 0 0 0 15px; margin: 0 0 0 75px; background-repeat: no-repeat; }
+.UserPopupGrid { height: 300px; overflow-y: scroll; }
+
+/********** Personalizzazioni per Pagina *******************/
+.bodyMain.utenti #MainContent .Riquadro table tbody tr td table,
+.bodyMain.agenti #MainContent .Riquadro table tbody tr td table { display: block; }
+.bodyMain.utenti #MainContent .Riquadro table tbody tr td table tr,
+.bodyMain.utenti #MainContent .Riquadro table tbody tr td table tr td,
+.bodyMain.agenti #MainContent .Riquadro table tbody tr td table tr,
+.bodyMain.agenti #MainContent .Riquadro table tbody tr td table tr td { display: inline; padding-right: 5px; }

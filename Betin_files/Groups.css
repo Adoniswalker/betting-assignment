@@ -1,0 +1,40 @@
+﻿.groupsMainTbl { border-top: 0; }
+.groupsTblGroups { border: 0; }
+.groupsDivMain { margin: 0 0 0 0; padding: 1px 0 0 0; background-color: #fff; }
+.groupSport { height: 29px; margin-bottom: 10px; line-height: 29px; background-color: #545454; padding: 0 0 0 10px; line-height: 29px; font-weight: bold; color: #ffffff; font-size: 12px; text-align: left; position: relative; white-space: nowrap; }
+.groupSport .Sport { color: #fff; text-align: left; font-size: 12px; font-weight: bold; }
+.groupSport .divBtnSx { position: absolute; right: 4px; top: 3px; font-size: 0px; width: 60px; text-align: right; display: none; }
+.groupSport .divBtnSx IMG { margin-left: 2px; border: 0; float: right; }
+.btnSxGroups IMG { border: 0; padding-right: 3px; padding-top: 3px; }
+.btnSxGroups {
+    cursor: pointer; 
+    border-bottom: none; 
+    border-left: none; 
+    border-right: none; 
+    color: #000; 
+    font-weight: bold; 
+    padding:0;
+    font-size: 12px; 
+    margin: 0 2px 0 2px; 
+    line-height: 23px; 
+    text-decoration: none;
+    border-radius:1px;
+    background-color:#fbd115;
+    width: 57px;
+    display:block; 
+    text-align:center
+}
+.wdZero { width: 26px; background-color: #E3E4E6; }
+.groupSport A { text-decoration: none; color: #fff; font-weight: bold; display: block; }
+.groupSport .Sport A { background-position: right center; background-image: url('Images/selectAll.png'); background-repeat: no-repeat; }
+.groupSport .Sport A:hover { color: #fff; }
+.groupsGroup { height: 33px; line-height: 30px; background-color: #e3e4e6; width: 100%; position: relative; }
+.groupsGroup A { color: #42464c; font-weight: bold; display: block; font-size: 12px; padding: 0 0 0 10px; text-decoration: none; }
+.groupTblItem { margin: 0; }
+.groupItem TR { line-height: 25px; }
+.groupItem TD { color: #c4c4c4; font-size: 12px; font-weight: normal; width: 33%; height: 30px; vertical-align: middle; position: relative; line-height: 18px; padding-left: 30px; }
+.groupItem TD SPAN { position: relative; display: block; padding: 2px 0; }
+.groupItem TD INPUT { position: absolute; top: 0px; left: -25px; }
+.groupItem TD LABEL { color: #42464c; display: table-cell; }
+.groupBtn { padding: 2px 0 20px 0; text-align: right; margin-top: 10px; }
+.GroupSep { background-color: #FFFFFF; height: 4px; }

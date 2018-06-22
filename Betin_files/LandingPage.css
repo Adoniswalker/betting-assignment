@@ -1,0 +1,45 @@
+﻿.bodyLanding { margin: 0; background: #000; }
+.divMain { margin: 150px auto 0 auto; height: 400px; width: 609px; background-image: url('images/landingpage/div_mainLanding_bg.png'); background-repeat: no-repeat; background-position: center top; position: relative; }
+.LandingMain { position: absolute; top: 19px; left: 27px; height: 318px; width: 555px; background-image: url('images/landingpage/div_MainImg.jpg'); background-repeat: no-repeat; background-position: center top; }
+.LandingDivPuls { height: 43px; position: absolute; bottom: 10px; right: 4px; text-align: right; }
+.LandingDivPuls UL { list-style-type: none; margin: 0 10px 0 0; padding: 0; }
+.LandingDivPuls UL LI { display: inline; }
+
+.LandingDivPuls .it-IT,
+.LandingDivPuls .en-GB,
+.LandingDivPuls .sr-Latn-CS,
+.LandingDivPuls .de-DE,
+.LandingDivPuls .bg-BG,
+.LandingDivPuls .fr-FR,
+.LandingDivPuls .es-ES,
+.LandingDivPuls .pl-PL,
+.LandingDivPuls .es-PE,
+.LandingDivPuls .es-EC { width: 35px; height: 43px; display: inline-block; background-image: url('images/LandingPage/Language_Ita.png'); background-position: center center; border: 0px; margin: 0; }
+.LandingDivPuls .sr-Latn-CS { background-image: url('images/LandingPage/Language_Srb.png'); }
+.LandingDivPuls .en-GB { background-image: url('images/LandingPage/Language_Eng.png'); }
+.LandingDivPuls .de-DE { background-image: url('images/LandingPage/Language_Deu.png'); }
+.LandingDivPuls .bg-BG { background-image: url('images/LandingPage/Language_Bgn.png'); }
+.LandingDivPuls .fr-FR { background-image: url('images/LandingPage/Language_Fra.png'); }
+.LandingDivPuls .es-ES { background-image: url('images/LandingPage/Language_Esp.png'); }
+.LandingDivPuls .pl-PL { background-image: url('images/LandingPage/Language_Pln.png'); }
+.LandingDivPuls .es-PE { background-image: url('images/LandingPage/Language_Per.png'); }
+.LandingDivPuls .es-EC { background-image: url('images/LandingPage/Language_ECU.png'); }
+
+/**********************************************************************/	
+#landingHeader .Logo { position: absolute; top: 4px; left: 7px; }
+.LandingMsg { position: absolute; left: 10px; bottom: 70px; color: #FFFFFF; font-family: Impact, Verdana; }
+.LandingCard {
+    background-image:url('images/LandingPage/footer_cards.png');
+    height:47px;
+    background-repeat:no-repeat;
+    background-position:right center;
+    position:absolute;
+    bottom:0;
+    left:30px;
+    width:550px;
+    color:#858585;
+    font-size:10px;
+    font-family:Arial;
+    line-height:47px;
+}
+.landingLogin { width: 249px; height: 232px; }

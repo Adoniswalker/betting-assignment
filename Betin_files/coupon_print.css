@@ -1,0 +1,100 @@
+﻿/******************** STAMPA  **********************************/
+.PrintCoupon { margin: 0; padding: 0; font-family: Arial, sans-serif; font-size: 9px; line-height: 12px; }
+.PrintCouponMainDiv { width: 255px; }
+
+.imgSfondoStampaCopia { position: absolute; top: 70px; left: 0; z-index: 1000; Display: block; }
+
+.PCAcceptedDate { text-transform: uppercase; border: 1px solid #000000; padding-top: 2px; padding-bottom: 2px; text-align: center; font-weight: bold; font-size: 12px; }
+
+.PCLogo { text-align: center; margin: 0 0 1px 0; }
+.PCLogo img { width: 60px; }
+
+.PCDatiSchedina { background-color: #FFFFFF; padding: 0; margin: 0; border: 1px solid #000000; border-bottom: 0; }
+.PCDatiSchedina .PCItemDate { text-indent: 5px; font-weight: bold; font-size: 9px; text-transform: uppercase; }
+.PCDatiSchedina .PCDatiItem { position: relative; font-weight: bold; height: 11px; }
+.PCDatiSchedina .PCDatiItem .PCItemSX { position: absolute; left: 2px; text-transform: uppercase; }
+.PCDatiSchedina .PCDatiItem .PCItemDX { position: absolute; right: 2px; }
+
+.PCDatiEventi { background-color: #FFFFFF; border: 1px solid #000; margin: 0; }
+.PCDatiEventi .PCTitleTipoSco { height: 18px; border-bottom: 1px solid #000; }
+.PCDatiEventi .PCTitleTipoSco DIV { font-weight: bold; font-size: 9px; color: #000; text-align: center; text-transform: uppercase; }
+
+.PCEventsItem { border-bottom: 1px dotted #CCC; }
+.PCEventsItem .PCMainEvent { position: relative; width: 100%; padding-left: 2px; border-top: 1px solid #000; display: block; }
+.PCEventsItem .PCGruppo { display: inline-block; text-align: left; }
+.PCEventsItem .PCEvento { display: inline-block; text-align: left; padding-left: 0; }
+.PCEventsItem .PCCodPub { display: block; position: absolute; font-weight: bold; }
+.PCEventsItem .PCSEvento { display: block; text-align: left; padding-left: 28px; font-weight: bold; }
+.PCEventsItem .PCOdds { padding: 0 2px; text-align: right; border-left: 1px solid #000; border-top: 1px solid #000; }
+.PCEventsItem .PCDate { display: block; }
+
+.PCEventsItem .PCData { font-size: 9px; line-height: 10px; white-space: pre-wrap; padding: 0 2px; text-align: center; border-top: 1px dotted #000; }
+
+.PCEventsItem .PCSegno { font-size: 9px; text-align: right; }
+.PCEventsItem .PCSegno TABLE { width: 100%; }
+.PCEventsItem .PCQuota { font-size: 9px; font-weight: bold; }
+
+.PCDatiEventi .PCItemsOdds { position: relative; }
+
+.PCEventsItem .PCBankerBG { display: none; }
+.PCEventsItem .PCBanker { display: inline-block; font-weight: bold; color: #000000; white-space: nowrap; }
+.PCEventsItem .PCBanker:before { content: '- '; }
+.PCEventsItem .PCSegnoCap { display: none; }
+
+.PCEventsItem.live .PCSEvento { /*display: none;*/ }
+.PCEventsItem.live .PCEvento { font-weight: bold; }
+.PCEventsItem.live .PCGruppo { /*padding-left: 28px;*/ }
+
+.PCItemSep { clear: both; margin: 0; }
+
+.PCDatiEventiCnt { padding: 0; }
+
+.PCDatiPuntata { background-color: #FFF; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0; margin: 0; }
+.PCDatiPuntata .PCDatiItem { font-weight: bold; font-size: 9px; height: 20px; line-height: 20px; position: relative; }
+.PCDatiPuntata .PCDatiItem .PCItemDX { position: absolute; right: 3px; }
+.PCDatiPuntata .PCDatiItem .PCItemSX { position: absolute; left: 3px; }
+.PCDatiPuntata .PCDatiItemLast { position: relative; font-weight: normal; height: 13px; font-size: 11px; font-weight: bold; text-transform: capitalize; }
+.PCDatiPuntata .PCDatiItemLast .PCItemIGSX { position: absolute; left: 2px; }
+.PCDatiPuntata .PCDatiItemLast .PCItemIGDX { position: absolute; right: 2px; }
+
+.PCBonusVincita { background-color: #FFFFFF; border: 1px solid #000000; border-top: 0; margin: 0 0 0 0; width: 253px; overflow: hidden; }
+.PCBonusVincita .PCTItileVin { float: left; padding-left: 3px; font-size: 11px; line-height: 13px; }
+.PCBonusVincita .PCTItileVin DIV { font-weight: bold; color: #000000; text-align: left; }
+.PCTItileBonus { float: left; padding-left: 3px; font-weight: normal; color: #000000; text-align: left; }
+
+.PCBonusVincita .ItemSingolo { float: right; height: 12px; padding-right: 2px; }
+.PCBonusVincita .ItemSingolo .ItemSingoloBG { display: none; }
+.PCBonusVincita .ItemSingolo .ItemSingoloVal SPAN { background-color: #FFFFFF; font-size: 11px; font-weight: bold; line-height: 13px; }
+
+.ItemSingoloValBon { font-weight: normal; }
+.PCBonusVincita .ItemDoppio { float: right; white-space: nowrap; line-height: 10px; height: 13px; padding-right: 2px; }
+.PCBonusVincita .ItemDoppio .ItemDoppioValSX { display: inline; padding: 0 4px 0 0; }
+.PCBonusVincita .ItemDoppio .ItemDoppioValDX { display: inline; }
+
+.PCRaggr { background-color: #FFFFFF; border-left: 1px solid #000000; border-right: 1px solid #000000; margin: 0; }
+.PCRaggrItem { position: relative; border-bottom: 1px solid #000000; height: 11px; }
+.PCRaggrItem .PCRaggrGR { position: absolute; top: 0; left: 0; width: 50px; border-right: 1px solid #000000; text-align: center; }
+.PCRaggrItem .PCRaggrCombo { position: absolute; top: 0; left: 55px; width: 110px; border-right: 1px solid #000000; text-align: center; }
+.PCRaggrItem .PCRaggrWin { position: absolute; top: 0; right: 0; padding-right: 3px; }
+
+.PCDisclaimer { font-weight: normal; padding: 2px; text-align: center; margin: 0px; }
+
+.PCBonusVincitaItem { position: relative; font-weight: normal; height: 12px; padding: 0 2px 0 2px; text-transform: capitalize; }
+.PCBonusVincitaItem .PCItemDX { position: absolute; right: 2px; }
+.PCBonusVincitaItem .PCItemSX { position: absolute; }
+
+.PCBonusVincita .SepImporti { clear: both; }
+
+.PCBarcode { width: 255px; text-align: center; margin-top: 0; padding: 1px 0; }
+.PCBarcode img { width: 230px; height: 50px; }
+
+.PCDatiHeader { border-bottom: 2px solid #000000; text-align: center; font-weight: bold; text-transform: uppercase; }
+.PCDatiSubHeader { font-size: 9px; text-align: center; font-weight: bold; text-transform: uppercase; height: 12px; line-height: 12px; position: relative; }
+.PCDatiSubHeader .b { display: block; text-align: center; top: 0; right: 0px; width: 10px; position: absolute; }
+.PCDatiHeader .e { text-align: center; padding-left: 2px; }
+.PCDatiSubHeader .s { display: block; border-left: 1px solid #000000; text-align: center; right: 46px; bottom: 0px; width: 40px; position: absolute; }
+.PCDatiSubHeader .q { display: block; border-left: 1px solid #000000; border-right: 1px solid #000000; text-align: center; right: 10px; bottom: 0px; width: 35px; position: absolute; }
+
+.spacer10 { clear: both; height: 0; }
+
+.PCdisclaimerBonus { border: 1px solid #000000; border-top: 0; padding: 3px 5px; text-align: center; font-size: 9px; clear: both; }

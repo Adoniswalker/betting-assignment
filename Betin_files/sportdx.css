@@ -1,0 +1,135 @@
+#sportdx .sliderdx .slidedx img {
+    border-radius: 5px 5px 0px 0px;
+}
+
+
+
+#sportdx .sliderdx {
+	height: 179x;
+	width: 216px;
+}
+#sportdx .sliderdx .slidedx {
+	height: 179px;
+}
+#sportdx .content-carouseldx .controlsdx {
+	padding-top: 5px;
+}
+
+#sportdx .pageddx.content-carouseldx .controlsdx {
+	background-color: #205393;
+	background-clip: padding-box;
+	height: 36px;
+	padding: 0 10px;
+	position: relative;
+	border-radius: 0px 0px 5px 5px;
+}
+#sportdx .pageddx.content-carouseldx .controlsdx .carousel-paginationdx, .pageddx.content-carouseldx .controlsdx .carousel-paginationdx li, .pageddx.content-carouseldx .controlsdx .carousel-paginationdx li a {
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+	float: none;
+	border: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+}
+#sportdx .pageddx.content-carouseldx .controlsdx .carousel-paginationdx {
+	padding-top: 8px;
+}
+#sportdx .pageddx.content-carouseldx .controlsdx .carousel-paginationdx li {
+	margin: 0 3px;
+	vertical-align: middle;
+}
+#sportdx .pageddx.content-carouseldx .controlsdx .carousel-paginationdx li a {
+	line-height: 0;
+	height: 12px;
+	width: 11px;
+	font-size: 0;
+	background: url("carousel_pagination.png") no-repeat 0 0px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	text-indent: -9999px;
+	vertical-align: middle;
+}
+#sportdx .pageddx.content-carouseldx .controlsdx .carousel-paginationdx li.selected a {
+	background-position: 0 -21px;
+}
+#sportdx .gallery.content-carouseldx .controlsdx {
+	padding: 0 10px;
+	border-top: none;
+	position: relative;
+}
+#sportdx .gallery.content-carouseldx .controlsdx .carousel-paginationdx, .gallery.content-carouseldx .controlsdx .carousel-paginationdx li, .gallery.content-carouseldx .controlsdx .carousel-paginationdx li a {
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+	float: none;
+	border: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+}
+#sportdx .gallery.content-carouseldx .controlsdx .carousel-paginationdx {
+	margin-top: 15px;
+}
+#sportdx .gallery.content-carouseldx .controlsdx .carousel-paginationdx li {
+	margin: 0 4px;
+}
+#sportdx .gallery.content-carouseldx .controlsdx .carousel-paginationdx li a {
+	border: 1px solid #ccc;
+	background: #fff;
+	padding: 5px;
+}
+#sportdx .gallery.content-carouseldx .controlsdx .carousel-paginationdx li a img {
+	width: 66px;
+	height: 50px;
+}
+#sportdx .gallery.content-carouseldx .controlsdx .carousel-paginationdx li.selected a {
+	border: 2px solid #5da2d5;
+	padding: 4px;
+}
+
+.content-carouseldx .controlsdx.centered {
+	text-align: center;
+}
+.content-carouseldx .controlsdx .controldx {
+	margin: 4px 4px 0 4px;
+	display: inline-block;
+	background: url("carousel_controls.png") no-repeat 0 0;
+	height: 36px;
+	width: 27px;
+	text-indent: -9999px;
+	line-height: 0;
+	font-size: 0;
+	vertical-align: top;
+}
+.content-carouseldx .controlsdx .controldx.nextdx {
+    background-position: 0px 0px;
+}
+.content-carouseldx .controlsdx .controldx.prevdx {
+    background-position: 0px -48px;
+}
+.content-carouseldx .controlsdx .controldx {
+    margin: 4px 4px 0px;
+    display: inline-block;
+    background: url("carousel_controls.png") no-repeat scroll 0px 0px transparent;
+    height: 36px;
+    width: 27px;
+    text-indent: -9999px;
+    line-height: 0;
+    font-size: 0px;
+    vertical-align: top;
+}
+
+
+
+
+
+

@@ -1,0 +1,647 @@
+﻿.divQta { padding: 0; margin: 0; background-color: #fff; }
+/*******************************************************/
+.divBblu { height: 33px; line-height: 30px; background-color: #3f444e; width: 598px; position: relative; }
+.sezQuota { color: #fff; text-align: left; font-size: 12px; font-weight: bold; padding: 4px 0 3px 10px; position: absolute; left: 0; }
+.divBtnSx { position: absolute; right: 10px; top: 13px; font-size: 0px; width: auto; text-align: right; }
+.divBtnSx IMG { margin-left: 2px; border: 0; }
+.divBtnSx INPUT { margin: 0; padding: 0; }
+	
+.groupItem TD { color: #ffffff; }
+
+/****************** BOTTONI TIPI QUOTE ******************/
+.divBtn { float: left; padding-top: 2px; padding-bottom: 2px; margin: 0; position: relative; }
+.OddsDetailsMenuItem {
+	float:left;
+	font-size:12px;
+	font-weight:bold;
+	text-align:center;
+	width: 88px;
+	text-decoration:none;
+	height:29px; line-height:29px; cursor:pointer;
+	border: 1px solid #bfbfbf;
+    color: #3f444e;
+    background-color: #d6d9da;
+    margin: 2px;
+    padding: 0 13px;
+}
+.OddsDetailsMenuItem a { color: #3f444e; padding: 0 2px 0 2px; text-decoration: none; display: block; }
+.OddsDetailsMenuItem a:hover { padding: 0 2px 0 2px; text-decoration: none; }
+.OddsDetailsMenuSelected {
+	float:left;
+	font-size:12px;
+	width: 88px;
+	font-weight:bold;
+	text-align:center;
+	color:#ffffff;
+	text-decoration:none;
+	height:29px; line-height:29px; cursor:pointer;
+	background-color: #005ea1; border:1px solid #7aa5cc;
+    margin: 2px;
+    padding: 0 13px;
+}
+.OddsDetailsMenuSelected a { text-decoration: none; color: #ffffff; }
+.OddsDetailsMenuSelected.single { }
+
+/****** STILI FINTE COMBO QUOTE *******/
+.DIQ { display: none; }
+.divCmb {
+    width:19px; 
+    overflow:hidden; 
+    cursor:pointer; 
+    background-image:url('images/odds_combo_bg.png');
+    background-position:right 0;
+    background-repeat:no-repeat;
+    height:17px;
+    line-height:16px;
+    border:1px solid #000000;
+    padding:0 0 0 0;
+    position:relative;
+} 
+.divCmb SPAN { position: absolute; right: 15px; top: 0; height: 17px; line-height: 16px; }
+.divCmb.Sel { background-position: right -17px; }
+.divCmb.click { background-position: right -34px; border: 1px solid #646464; }
+   
+#divPopCmb { position: absolute; border: 1px solid #646464; background-color: #202020; padding: 3px; width: 164px; max-height: 310px; overflow: auto; display: none; z-index: 6000; }
+#divPopCmb UL { font-size: 10px; font-style: italic; margin: 0; padding: 0; list-style-type: none; font-weight: bold; color: #ffbb03; }
+#divPopCmb UL UL LI A { padding-left: 20px; text-decoration: none; color: #FFFFFF; display: block; cursor: pointer; }
+#divPopCmb UL UL LI A:hover { text-decoration: none; color: #000000; background-color: #ffbb03; }
+#divPopCmb UL UL LI { background-color: #202020; font-size: 10px; font-style: normal; font-weight: normal; line-height: 11px; }
+#divPopCmb UL LI { }
+#divPopCmb UL UL LI SPAN { cursor: pointer; }
+#divPopCmb UL UL .cmbSel A { background-color: #ffbb03; padding: 0 3px 0 20px; color: #000000; }
+/*************************************************/
+.OddsDetailsMid { padding-top: 2px; }
+.OddsDetailsClasseQuota { background-color: #D1D0CC; font-weight: bold; padding: 2px; }
+
+.legendaOdds { color: #22314e; font-size: 11px; margin: 10px auto 0 auto; display: none; }
+.OddsDetailsClassiQuota { padding: 0 2px 0 2px; }
+.OddsDetailsClassiQuota.All { padding: 0 2px 0 0; font-size: 0; }
+.OddsDetailsClassiQuota.Stats { padding: 0 0 0 0; font-size: 0; width: 19px; }
+.OddsDetailsClassiQuota.Stats A { display: block; height: 19px; width: 19px; background-position: center center; background-repeat: no-repeat; background-image: url(images/icons/stats.png); }
+
+.divLegendGiocab IMG { float: left; margin-right: 3px; }
+.giocabTxt { float: left; white-space: nowrap; }
+
+/***STILE PER QUOTE CON TIPO QUOTA NORMALE**/	
+.OddsQuotaItemStyleTQ .OddGB_0_0, 
+.OddsQuotaItemStyleTQ .OddGB_1_0,
+.OddsQuotaItemStyleTQ .OddGB_2_0,
+.OddsQuotaItemStyleTQ .OddGB_3_0,
+.OddsQuotaItemStyleTQ .OddGB_4_0,
+.OddsQuotaItemStyleTQ .OddGB_5_0,
+.OddsQuotaItemStyleTQ .OddGB_10_0,
+.OddsQuotaItemStyleTQ .OddGB_0_1, 
+.OddsQuotaItemStyleTQ .OddGB_1_1,
+.OddsQuotaItemStyleTQ .OddGB_2_1,
+.OddsQuotaItemStyleTQ .OddGB_3_1,
+.OddsQuotaItemStyleTQ .OddGB_4_1,
+.OddsQuotaItemStyleTQ .OddGB_5_1,
+.OddsQuotaItemStyleTQ .OddGB_10_1 { }
+
+/* -------------------- INIZIO STILI GIOCABILITA ----------------------- */
+.OddGB_Empty_0.QuotaSel,.OddGB_0_0.QuotaSel,.OddGB_1_0.QuotaSel,.OddGB_2_0.QuotaSel,.OddGB_3_0.QuotaSel,.OddGB_4_0.QuotaSel,.OddGB_5_0.QuotaSel,.OddGB_10_0.QuotaSel, 
+.OddGB_Empty_1.QuotaSel,.OddGB_0_1.QuotaSel,.OddGB_1_1.QuotaSel,.OddGB_2_1.QuotaSel,.OddGB_3_1.QuotaSel,.OddGB_4_1.QuotaSel,.OddGB_5_1.QuotaSel,.OddGB_10_1.QuotaSel {}	
+
+.OddGB_Empty_0.QuotaSel a,.OddGB_0_0.QuotaSel a,.OddGB_1_0.QuotaSel a,.OddGB_2_0.QuotaSel a,.OddGB_3_0.QuotaSel a,.OddGB_4_0.QuotaSel a,.OddGB_5_0.QuotaSel a,.OddGB_10_0.QuotaSel a, 
+.OddGB_Empty_1.QuotaSel a,.OddGB_0_1.QuotaSel a,.OddGB_1_1.QuotaSel a,.OddGB_2_1.QuotaSel a,.OddGB_3_1.QuotaSel a,.OddGB_4_1.QuotaSel a,.OddGB_5_1.QuotaSel a,.OddGB_10_1.QuotaSel a {	
+	color:#000 !important; background:#fbd115; border:1px solid #b2ae6b; 
+	}	
+
+/***STILE PER QUOTE CON TIPO QUOTA SELEZIONATE**/	
+.OddsQuotaItemStyleTQ .OddGB_Empty_0.QuotaSel,
+.OddsQuotaItemStyleTQ .OddGB_0_0.QuotaSel,
+.OddsQuotaItemStyleTQ .OddGB_1_0.QuotaSel,
+.OddsQuotaItemStyleTQ .OddGB_2_0.QuotaSel,
+.OddsQuotaItemStyleTQ .OddGB_3_0.QuotaSel,
+.OddsQuotaItemStyleTQ .OddGB_4_0.QuotaSel,
+.OddsQuotaItemStyleTQ .OddGB_5_0.QuotaSel,
+.OddsQuotaItemStyleTQ .OddGB_10_0.QuotaSel, 
+.OddsQuotaItemStyleTQ .OddGB_Empty_1.QuotaSel,
+.OddsQuotaItemStyleTQ .OddGB_0_1.QuotaSel,
+.OddsQuotaItemStyleTQ .OddGB_1_1.QuotaSel,
+.OddsQuotaItemStyleTQ .OddGB_2_1.QuotaSel,
+.OddsQuotaItemStyleTQ .OddGB_3_1.QuotaSel,
+.OddsQuotaItemStyleTQ .OddGB_4_1.QuotaSel,
+.OddsQuotaItemStyleTQ .OddGB_5_1.QuotaSel,
+.OddsQuotaItemStyleTQ .OddGB_10_1.QuotaSel { color: #000; background: #fbd115; }
+
+.OddGB_Empty_0, .OddGB_Empty_1 { background-image: url(Images/Icons/blank.gif); background-repeat: no-repeat; background-position: right top; border: none; text-align: right; empty-cells: show; }
+
+/*Stili utilizzati quando cambia la classe quota (per mettere la barra verticale)*/
+.OddGB_Empty_1 { }
+.OddGB_0_1 { }
+.OddGB_1_1 { }
+.OddGB_2_1 { }
+.OddGB_3_1 { }
+.OddGB_4_1 { }
+.OddGB_5_1 { }
+.OddGB_10_1 { }
+
+.OddsQuotaHeaderStyle, 
+.OddsQuotaHeaderStyleSingle { width: 100%; }
+
+.dgQuote,
+.dgQuoteDett { width: 100%; height: 100%; }
+
+/*Stili per quote Normali con nome TipoQuota */
+.OddsQuotaHeaderStyleSingle TD { text-align: center; width: 100%; }
+.dgQuote .OddsQuotaItemStyleTQ .oddsTQ { width: 40px; font-size: 12px; padding-top: 2px; }
+.dgQuote .OddsQuotaItemStyleTQ .oddsQ { padding: 0; }
+
+.dgQuote .OddsQuotaItemStyleTQ TD { width: 40px; text-align: center; border: 1px solid #7aa5cc; }
+.dgQuote .OddsQuotaItemStyleTQ TD A { font-size: 12px; text-decoration: none; font-weight: bold; }
+.dgQuote .OddsQuotaItemStyleTQ TD:hover { }
+
+/*Stili per quote Normali senza nome TipoQuota */
+.OddsQuotaHeaderStyle TD { }
+.OddsQuotaItemStyle TD { border-top: none; border-bottom: none; text-align: right; height: 22px; font-size: 12px; line-height: 22px; }
+.OddsQuotaItemStyle .oddsQ { width: 41px; padding-right: 2px; }
+.OddsQuotaItemStyle TD A { 
+    text-decoration:none; 
+    font-weight:bold; 
+    display:block;
+    color:#fff; 
+    margin:2px; 
+    width:41px; 
+    height:22px; 
+    text-align:center;
+    background-color:#005ea1;
+    border:1px solid #7aa5cc;
+}
+
+/* -------------------- FINE STILI GIOCABILITA ----------------------- */
+.divQt { width: 100%; }
+.dgHeader { vertical-align: top; background-color: #f7f8f8; height: 27px; color: #42464c; font-size: 12px; font-weight: bold; line-height: 21px; border-top: 1px solid #fff; }
+
+/*stile per nascondere l'header*/
+.dgHidHdr { border: 0; visibility: hidden; display: none; height: 0; font-size: 0; padding: 0; margin: 0; line-height: 0; }
+.dgHidHdr IMG { height: 0; }
+
+.dgHidHdr .cqTbl, .dgHidHdr .altreTbl, .dgHidHdr .cqDateTbl, .dgHidHdr .codTbl, .dgHidHdr .incTbl,
+.dgHidHdr .dataTbl .HNDTbl .dgHidHdr .qtTbl_1, .dgHidHdr .qtTbl_0 { border: 0; visibility: hidden; height: 0; font-size: 0; padding: 0; margin: 0; line-height: 0; }
+/*fine*/
+
+.dgItem { background-image: url(images/bg_quote.png); background-repeat: repeat-x; background-position: bottom; height: 32px; font-size: 12px; color: #42464C; }
+
+.dgAItem { height: 32px; font-size: 12px; color: #005ea1; background-image: url(images/bg_quote.png); background-repeat: repeat-x; background-position: bottom; }
+	
+.dgAItem:hover .nmInc,
+.dgItem:hover .nmInc { color: #42464c; }
+	
+.codTbl { padding: 2px 10px 2px 33px; font-weight: bold; height: 27px; }
+.dataTbl { white-space: nowrap; text-align: center; padding: 2px 0 2px 10px; font-weight: bold; }
+.HNDTbl { white-space: nowrap; padding: 2px 5px 2px 5px; font-weight: bold; }
+.incTbl { padding: 2px 0 2px 30px; font-weight: bold; }
+.altreTbl { padding: 2px 0 2px 0; font-weight: bold; text-align: center; }
+.qtTbl_0, .qtTbl_1, .qtTbl { text-align: center; color: #42464c; text-decoration: none; width: 35px; padding: 0; font-weight: bold; position: relative; line-height: 30px; }
+.qtTbl { border: 0; }
+.qtTbl_0 { }
+.cqTbl, .cqDateTbl { text-align: center; padding: 3px 0 3px 0; background-color: #f7f8f8; color: #42464c; font-weight: bold; font-size: 12px; text-decoration: none; white-space: nowrap; height: 21px; border-bottom: 1px solid #d7d9db; }
+
+.cqDateTbl { text-align: left; padding-left: 10px; width: auto; }
+
+.codInc { text-align: center; font-size: 12px; padding: 0 5px 0 5px; color: #005ea1; font-weight: bold; }
+.favhnd { color: #005ea1; }
+.dtInc { white-space: nowrap; text-align: right; padding: 0 5px 0 5px; font-size: 12px; color: #42464c; font-weight: bold; }
+.HNDInc { white-space: nowrap; text-align: right; font-size: 10px; }
+.HNDInc DIV { width: 26px; padding: 0 5px 0 0; }
+.nmInc { font-size: 12px; padding-left: 5px; width: 100%; padding-bottom: 2px; line-height: 14px; font-weight: bold; color: #42464c; }
+.nmInc a { text-decoration: none; color: #000000; }
+
+/*******************************************************************/
+
+.RisultatiRisultato { font-weight: bold; text-align: center; padding: 0; white-space: nowrap; color: #FFFFFF; }
+.RisultatiSottoEvento { width: 100%; border-right: 2px solid #cbc9c9; }
+.RisultatiHeader TH { padding: 0 10px 0 10px; }
+
+.RisultatiRisultato .RisultatiTipo { text-align: right; height: 20px; color: #1a4500; padding: 0 2px 0 2px; }
+.RisultatiRisultato .Risultato { text-align: center; font-size: 11px; font-weight: bold; padding: 0 5px 0 5px; color: #22314e; }
+.RisultatiRisultato .RisultatiTipo DIV { width:75px; overflow: hidden;text-overflow:ellipsis; }
+.RisultatiRisultato .Risultato DIV { width: 75px; overflow: hidden; }
+.RisultatiRisultato .Risultato IMG { float: left; display: block; }
+.RisultatiSep { height: 1px; border-bottom: 1px dotted #5c5c5c; }
+.RisultatiVoid { color: Red; display: block; }
+
+.quoteLnkTop { display: none; position: relative; padding: 0 0 0 0; margin: 0; height: 0px; }
+.quoteLnkTop a { text-decoration: none; text-align: right; display: block; font-weight: bold; color: #656565; font-size: 10px; width: 43px; height: 0px; padding-right: 17px; padding-top: 3px; position: absolute; right: 0; }
+
+.quoteLnkSelAll { height: 18px; width: 111px; margin: 0 5px 0 5px; }
+
+.quoteLnkSelAll a {
+	display: block;
+	background-image:url('images/buttons/odds_select_all.gif');
+	background-repeat:no-repeat;
+	text-decoration:none;
+	font-size:11px;
+	color:#252629;
+	font-weight:bold;
+	line-height:18px;
+	padding-left:20px;
+	text-align:left;
+}
+.DateOdds { text-align: left; padding: 3px 0 3px 10px; background-color: #c7c7c7; color: #000000; font-weight: bold; font-size: 12px; text-decoration: none; white-space: nowrap; height: 27px; line-height: 27px; }	
+
+/*Hover quote TD*/	
+.OddGB_0_0:hover, .OddGB_0_1:hover,
+.OddGB_1_0:hover, .OddGB_1_1:hover,
+.OddGB_2_0:hover, .OddGB_2_1:hover,
+.OddGB_3_0:hover, .OddGB_3_1:hover,
+.OddGB_4_0:hover, .OddGB_4_1:hover,
+.OddGB_5_0:hover, .OddGB_5_1:hover,
+.OddGB_10_0:hover, .OddGB_10_1:hover { }
+
+.OddsQuotaItemStyleTQ .OddGB_0_0:hover, .OddsQuotaItemStyleTQ .OddGB_0_1:hover,
+.OddsQuotaItemStyleTQ .OddGB_1_0:hover, .OddsQuotaItemStyleTQ .OddGB_1_1:hover,
+.OddsQuotaItemStyleTQ .OddGB_2_0:hover, .OddsQuotaItemStyleTQ .OddGB_2_1:hover,
+.OddsQuotaItemStyleTQ .OddGB_3_0:hover, .OddsQuotaItemStyleTQ .OddGB_3_1:hover,
+.OddsQuotaItemStyleTQ .OddGB_4_0:hover, .OddsQuotaItemStyleTQ .OddGB_4_1:hover,
+.OddsQuotaItemStyleTQ .OddGB_5_0:hover, .OddsQuotaItemStyleTQ .OddGB_5_1:hover,
+.OddsQuotaItemStyleTQ .OddGB_10_0:hover, .OddsQuotaItemStyleTQ .OddGB_10_1:hover { }
+
+.OddsQuotaItemStyleTQ:hover { color:#005ea1; }
+
+/*Hover quote A*/
+.OddGB_0_0:hover a, .OddGB_0_1:hover a,
+.OddGB_1_0:hover a, .OddGB_1_1:hover a,
+.OddGB_2_0:hover a, .OddGB_2_1:hover a,
+.OddGB_3_0:hover a, .OddGB_3_1:hover a,
+.OddGB_4_0:hover a, .OddGB_4_1:hover a,
+.OddGB_5_0:hover a, .OddGB_5_1:hover a,
+.OddGB_10_0:hover a, .OddGB_10_1:hover a { }
+
+.OddsQuotaItemStyleTQ .OddGB_0_0:hover .oddsQ a, .OddsQuotaItemStyleTQ .OddGB_0_1:hover .oddsQ a,
+.OddsQuotaItemStyleTQ .OddGB_1_0:hover .oddsQ a, .OddsQuotaItemStyleTQ .OddGB_1_1:hover .oddsQ a,
+.OddsQuotaItemStyleTQ .OddGB_2_0:hover .oddsQ a, .OddsQuotaItemStyleTQ .OddGB_2_1:hover .oddsQ a,
+.OddsQuotaItemStyleTQ .OddGB_3_0:hover .oddsQ a, .OddsQuotaItemStyleTQ .OddGB_3_1:hover .oddsQ a,
+.OddsQuotaItemStyleTQ .OddGB_4_0:hover .oddsQ a, .OddsQuotaItemStyleTQ .OddGB_4_1:hover .oddsQ a,
+.OddsQuotaItemStyleTQ .OddGB_5_0:hover .oddsQ a, .OddsQuotaItemStyleTQ .OddGB_5_1:hover .oddsQ a,
+.OddsQuotaItemStyleTQ .OddGB_10_0:hover .oddsQ a, .OddsQuotaItemStyleTQ .OddGB_10_1:hover .oddsQ a { }
+
+.OddsQuotaItemStyleTQ .OddGB_0_0:hover .oddsTQ, .OddsQuotaItemStyleTQ .OddGB_0_1:hover .oddsTQ,
+.OddsQuotaItemStyleTQ .OddGB_1_0:hover .oddsTQ, .OddsQuotaItemStyleTQ .OddGB_1_1:hover .oddsTQ,
+.OddsQuotaItemStyleTQ .OddGB_2_0:hover .oddsTQ, .OddsQuotaItemStyleTQ .OddGB_2_1:hover .oddsTQ,
+.OddsQuotaItemStyleTQ .OddGB_3_0:hover .oddsTQ, .OddsQuotaItemStyleTQ .OddGB_3_1:hover .oddsTQ,
+.OddsQuotaItemStyleTQ .OddGB_4_0:hover .oddsTQ, .OddsQuotaItemStyleTQ .OddGB_4_1:hover .oddsTQ,
+.OddsQuotaItemStyleTQ .OddGB_5_0:hover .oddsTQ, .OddsQuotaItemStyleTQ .OddGB_5_1:hover .oddsTQ,
+.OddsQuotaItemStyleTQ .OddGB_10_0:hover .oddsTQ, .OddsQuotaItemStyleTQ .OddGB_10_1:hover .oddsTQ { color: #ffffff; }
+
+.ricercaEevento { font-size: 10px; }
+.ricercaSE { width: 100%; padding: 2px 0 3px 0; }
+.ricercaData { white-space: nowrap; padding: 0 4px 0 4px; }
+.OddsDetailsSE { background-color: #1a4500; font-weight: bold; padding: 3px 0 3px 4px; font-size: 12px; color: #ffffff; }
+.FastCodes { border: 1px solid #dadada; }
+.clickCQ { text-align: left; color: #ffffff; text-align: center; font-weight: bold; background-color: #333; padding: 1px 0 0 5px; }
+.clickCodCQ { text-align: right; width: 50%; background-color: #ffffff; padding: 1px 10px 1px 0; font-weight: bold; background-image: url(images/linea_qt_01.gif); background-position: bottom; background-repeat: repeat-x; color: #ff0000; }
+.clickTQ { text-align: left; width: 50%; background-color: #ffffff; padding: 1px 0 1px 10px; color: #005ea1; background-image: url(images/linea_qt_01.gif); background-position: bottom; background-repeat: repeat-x; }
+.detScoVP, .detScoIG, .detCashOut { color: #000000; white-space: nowrap; }
+.detScoEsitoPer { color: #e31515; font-weight: bold; }
+.detScoEsitoVin { color: #0c9c0d; font-weight: bold; }
+.detScoEsitoIncorso { color: #bfab00; font-weight: bold; }
+
+/*Pagina Quote async*/
+.lnkOddsBack { background-image: url(images/btn_back.png); width: 13px; height: 10px; display: block; float: right; margin-right: 10px; margin-top: 3px; background-repeat: no-repeat; }
+.lnkOddsRfh { background-image: url(images/btn_refresh.png); width: 14px; height: 15px; display: block; float: right; margin-right: 10px; background-repeat: no-repeat; }
+.lnkOddsPrn { background-image: url(images/btn_print.png); width: 14px; height: 14px; display: block; float: right; margin-right: 10px; background-repeat: no-repeat; }
+.lnkOddsCls { background-image: url(Images/btn_close_odds.png); width: 14px; height: 14px; display: block; float: right; background-repeat: no-repeat; }
+#oddsAsyncMsg_Empty,
+#oddsAsyncMsg_Many,
+#oddsAsyncLgnd { display: none; }
+
+.divDescCQ { position: relative; min-height: 18px; z-index: 3000; background-color: #f4f5f6; color: #65696c; font-size: 11px; }
+.divDescCQ a { display: block; position: absolute; cursor: pointer; right: 5px; top: 3px; background-image: url(images/Icons/Subevent_close.png); background-position: top right; background-repeat: no-repeat; height: 15px; width: auto; text-align: right; padding-right: 22px; line-height: 17px; }
+.divDescCQ a:hover { text-decoration: underline; }
+.divDescCQ > div { overflow: hidden; height: 0; padding: 0 25px 0 5px; }
+.divDescCQ SPAN { display: block; border: 1px solid #dadada; color: #4f86d0; padding: 5px; font-size: 11px; }
+.divDescCQ B { color: #005ea1; padding-right: 5px; }
+.divDescCQ.sel { height: auto; }
+.divDescCQ.sel > div { overflow: hidden; height: auto; padding: 5px 25px 0 5px; }
+.divDescCQ.sel a { background-image: url(images/Icons/Subevent_open.png); bottom: auto; top: 3px; font-size: 0; }
+
+.divOdds { margin-bottom: 10px; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px; clear: both; }
+.divOdds .header { border-radius: 3px; border-bottom-left-radius: 0; border-bottom-right-radius: 0; position: relative; height: 29px; line-height: 29px; padding-left: 30px; font-size: 12px; background-color: #3f444e; }
+.divOdds .header > SPAN { color: #fff; font-weight: bold; }
+.divOdds .header .ico { position: absolute; top: 4px; left: 4px; height: 20px; width: 25px; background-size: 16px; background-repeat: no-repeat; background-position: center center; }
+
+.divOdds .header .btn { position: absolute; top: 6px; right: 4px; padding: 0 2px; }
+
+/****GIOCABILITA'*****/
+.OddGB_Empty a, .OddGB_Empty_1 a, 
+.divOdds .SEs .item .odd.empty, .SEOdd.empty a { color: #fff; display: block; }
+.OddGB_0_0 a, .OddGB_0_1 a, 
+.divOdds .SEs .item .odd.g0, .SEOdd.g0 a { color: #ffcc00; }     /*UNICHE*/
+.OddGB_1_0 a, .OddGB_1_1 a,
+.divOdds .SEs .item .odd.g1, .SEOdd.g1 a { color: #fff; }        /*SINGOLE*/
+.OddGB_2_0 a, .OddGB_2_1 a,
+.divOdds .SEs .item .odd.g2, .SEOdd.g2 a { color: #ff6919; }     /*DOPPIE*/
+.OddGB_3_0 a, .OddGB_3_1 a,
+.divOdds .SEs .item .odd.g3, .SEOdd.g3 a { color: #48ff3f; }     /*TERNI*/
+.OddGB_4_0 a, .OddGB_4_1 a,
+.divOdds .SEs .item .odd.g4, .SEOdd.g4 a { color: #00d8ff; }     /*QUADRUPLE*/
+.OddGB_5_0 a, .OddGB_5_1 a,
+.divOdds .SEs .item .odd.g5, .SEOdd.g5 a { color: #ff9afe; }     /*QUINTUPLE*/
+.OddGB_10_0 a, .OddGB_10_1 a,
+.divOdds .SEs .item .odd.g10, .SEOdd.g10 a { color: #b131a0; }    /*DECUPLE*/
+
+.OddGB_Empty a, .OddGB_Empty_1 a, .OddGB_0_0 a, .OddGB_0_1 a, .OddGB_1_0 a, .OddGB_1_1 a, .OddGB_2_0 a, .OddGB_2_1 a,
+.OddGB_3_0 a, .OddGB_3_1 a, .OddGB_4_0 a, .OddGB_4_1 a, .OddGB_5_0 a, .OddGB_5_1 a, .OddGB_10_0 a, .OddGB_10_1 a { display: block; }
+
+/*****GRUPPI QUOTA*****/
+.divOdds .CGQ { position: relative; background-color: #2a2d34; color: #2a2d34; list-style-type: none; margin: 0; padding: 21px 0 0 0; overflow: hidden; }
+
+.divOdds .CGQ.t8,
+.divOdds .CGQ.t9,
+.divOdds .CGQ.t10,
+.divOdds .CGQ.t11,
+.divOdds .CGQ.t12,
+.divOdds .CGQ.t13,
+.divOdds .CGQ.t14 { padding-top: 44px; }
+
+.divOdds .CGQ > li:hover { cursor: pointer; }
+.divOdds .CGQ > li > span { position: absolute; top: 0; display: block; width: 76px; padding: 0 2px; margin-left: 2px; height: 21px; line-height: 22px; font-size: 11px; text-align: center; background-color: #d6d9da; border-radius: 3px 3px 0 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+.divOdds .CGQ > li.itm1 > span { left: 11px; }
+.divOdds .CGQ > li.itm2 > span { left: 93px; }
+.divOdds .CGQ > li.itm3 > span { left: 175px; }
+.divOdds .CGQ > li.itm4 > span { left: 257px; }
+.divOdds .CGQ > li.itm5 > span { left: 339px; }
+.divOdds .CGQ > li.itm6 > span { left: 421px; }
+.divOdds .CGQ > li.itm7 > span { left: 503px; }
+
+.divOdds .CGQ > li.itm8 > span { left: 11px; top: 23px; }
+.divOdds .CGQ > li.itm9 > span { left: 93px; top: 23px; }
+.divOdds .CGQ > li.itm10 > span { left: 175px; top: 23px; }
+.divOdds .CGQ > li.itm11 > span { left: 257px; top: 23px; }
+.divOdds .CGQ > li.itm12 > span { left: 339px; top: 23px; }
+.divOdds .CGQ > li.itm13 > span { left: 421px; top: 23px; }
+.divOdds .CGQ > li.itm14 > span { left: 503px; top: 23px; }
+
+.divOdds .CGQ > li.sel { }
+.divOdds .CGQ > li.sel > span { color: #000; background-color: #fbd115; }
+.divOdds .CGQ > li.preSel > span,
+.divOdds .CGQ > li.sel.preSel > span { color: #fff; background-color: #005ea1; }
+.divOdds .CGQ > li > ul { display: none; background-color: #f4f5f6; }
+.divOdds .CGQ > li.sel > ul { display: none; background-color: #f4f5f6; }
+.divOdds .CGQ > li.preSel > ul { display: block; border-top: 2px solid #005ea1; }
+.divOdds .CGQ > li.sel.preSel > ul { display: block; border-top: 2px solid #005ea1; }
+
+
+
+
+.divOdds .CQ { margin: 0; padding: 0; list-style-type: none; width: 100%; float: left; }
+.divOdds .CQ > LI { color: #3f444e; font-weight: bold; position: relative; background-color: #d6d9da; text-align: center; width: 116px; font-size: 11px; float: left; margin: 2px 1px 0 1px; height: 32px; line-height: 32px; cursor: pointer; border: 1px solid #bfbfbf; }
+.divOdds .CQ > LI.sel { background-color: #005ea1; border: 1px solid #7aa5cc; color: #fff; cursor: default; }
+.divOdds .CQ > LI:hover { z-index: 30; background-color: #fbd115; border: 1px solid #b2ae6b; color: #000; }
+.divOdds .CQ > LI:hover SPAN { background-position: left -36px; }
+.divOdds .CQ > LI > SPAN { }
+.divOdds .CQ > LI:hover .CQ { display: block; width: 117px; padding: 5px 10px; }
+.divOdds .CQ > LI:hover .CQ .sel { color: #fbd115; }
+.divOdds .CQ > LI:hover .CQ LI:hover { color: #fbd115; }
+
+.OddsBreadbrum { height: 28px; line-height: 28px; background-color: #2a2d34; position: relative; }
+.OddsBreadbrum > ul { margin: 0; padding: 0; color:#FFF; list-style-type: none; padding-left: 2px; position: absolute; top: 0; left: 0;  overflow:hidden; -ms-text-overflow:ellipsis; -o-text-overflow:ellipsis; text-overflow:ellipsis; white-space:nowrap; height: 28px; line-height: 28px; width:590px; }
+.OddsBreadbrum > ul > li {display: inline; }
+.OddsBreadbrum > ul > li > a { color: #fbd115;display: inline; font-size: 11px; padding-right: 14px; padding-left: 10px; text-decoration: none; background-image: url('images/odd_arrow.png'); background-position: right center; background-repeat: no-repeat; }
+.OddsBreadbrum > ul > li:last-child > a:last-child { color: #fff; background-image: none; }
+
+.divOdds .item { float: left; width: 100%; position: relative; min-height: 33px; line-height: 28px; border-bottom: 1px solid #dfe1e3; margin-bottom: 6px; padding-bottom: 3px; }
+.divOdds .item .ID { position: absolute; left: 0; bottom: 6px; line-height: 14px; font-size: 10px; color: #42464c; }
+.divOdds .item .stats { position: absolute; left: 114px; bottom: 7px; z-index: 3; height: 14px; width: 14px; display: block; background-image: url( images/quote_stats.png); background-position: center; background-repeat: no-repeat; cursor: pointer; }
+.divOdds .item .Time { position: absolute; left: 30px; bottom: 6px; line-height: 14px; font-size: 10px; color: #565d65; }
+.divOdds .item .Time span { padding-right: 5px; }
+.divOdds .item .Event { float: left; position: relative; z-index: 2; width: 200px; padding-bottom: 20px; line-height: 12px; font-weight: bold; color: #42464c; }
+
+.divOdds.r1.c1 .item .Event { pointer-events: none; cursor: default; }
+.divOdds.c2 .item .Event { width: 460px; }
+.divOdds.c3 .item .Event { width: 420px; }
+.divOdds.c5 .item .Event { width: 320px; }
+.divOdds.c6 .item .Event { width: 290px; }
+.divOdds.c8 .item .Event { width: 193px; }
+.divOdds.c9 .item .Event { width: 154px; }
+
+.divOdds .item .Event:hover { cursor: pointer; color: #000; text-decoration: underline; }
+.divOdds .item .Event span:first-child::after { }
+.divOdds .item .more { display:none; /*position: absolute; right: 0; top: 1px; padding: 0 2px; width: 35px; border: 1px solid #bfbfbf; border-radius: 3px; height: 27px; cursor: pointer; text-align: center; font-size: 11px; */}
+.divOdds .item .odds { float: right; cursor: pointer;}
+.divOdds .item .odds .blank { margin-bottom: 3px; float: left; width: 41px; margin-right: -1px; border: 1px solid transparent; border-bottom: 1px solid transparent; }
+.divOdds .item .odds .hnd { position: absolute; width: 30px; left: -35px; top: 0; display: none; cursor: default; font-weight: normal; color: #646464; font-size: 11px; text-align: right; }
+.divOdds .item .odds .odd.c1 .hnd { display: block; }
+.divOdds .item .odds .cq { float: left; position: relative; margin-right: 3px; }
+.divOdds .item .odds .cq > span { display: none; }
+
+.divOdds .item .odds .odd,
+.divOdds .item .odds .odd.empty:hover {
+    font-weight: bold; 
+    font-size: 12px;  
+    margin-bottom: 3px;
+    float: left;
+    width: 47px; 
+    margin-right: -1px; 
+    position: relative; 
+    text-align: center;
+    border: 1px solid #7aa5cc;
+    background-color:#005ea1
+}
+.divOdds .item .odds .odd.empty:hover { cursor: default; }
+
+.divOdds .item .odds .odd.sel,
+.divOdds .item .odds .odd.QuotaSel { background-color: #fbd115; color: #000; border: 1px solid #b2ae6b; }
+.divOdds .item .odds .odd:hover { background-color: #15376e; color: #fff; }
+
+.noCategory,
+.noSubEvents { display: none; font-size: 0; text-align: center; }
+
+.divOdds .SEs { background-image: url("images/bg_quote_top.png"); background-repeat: repeat-x; clear: both; padding-top: 24px; }
+
+.divOdds .item .odds .odd.QuotaSel DIV:first-child { color: #000; }
+.divOdds .item .odds .odd:hover DIV:first-child  { color: #fff; }
+
+.sepOdds { clear: both; }
+.endOdds { clear: both; }
+
+.odd.firstInRow:after { color: #f00 !important; height:100px; content:' '; clear: both; }
+
+.divOdds .sepData { clear: both; height: 20px; line-height: 20px; line-height: 20px; font-size: 12px; color: #42464C; background-color: #F2F3F4; margin-bottom: 5px; padding-left: 10px; }
+
+.divOdds .item:nth-child(2) .odds .cq > span { display: block; font-size: 11px; font-weight: bold; position: absolute; top: -47px; width: 100%; height: 20px; line-height: 20px; color: #42464C; text-align: center; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.divOdds.r1 .item .odds .blank { height: 28px; }
+.divOdds.r1 .item .odds .odd { height: 28px; }
+
+.divOdds.r1 .item .odds .odd DIV:first-child { display: none; font-weight: normal; }
+.divOdds.r1 .item:nth-child(2) .odd DIV:first-child,
+.divOdds.r1  .sepData+.item .odds .odd DIV:first-child {
+    display:block;
+    background-color: #F2F3F4;
+    color: #42464C;
+    height: 20px;
+    left: 0;
+    line-height: 10px;
+    position: absolute;
+    top: -25px;
+    width: 100%;
+    font-size: 11px; 
+    overflow:hidden; 
+    text-overflow:ellipsis;
+}
+
+.divOdds .item .odd DIV:first-child { color: #7aa5cc; height: 15px; line-height: 18px; font-size: 11px; overflow: hidden; font-weight: normal; text-overflow: ellipsis; }
+
+/*.divOdds.cq101 .item .odds { width: 393px; }
+.divOdds.cq101 .item .Event { width: 200px; float: left; }
+
+.divOdds.cq6 .item .odds { width: 435px; }
+.divOdds.cq6 .item .Event { width: 160px; }
+
+.divOdds.cq289 .item .odds { width: 400px; }
+.divOdds.cq289 .item .Event { width: 193px; }*/
+
+/*Pagina dettaglio SottoEvento*/
+.btnOddsBack { font-size: 12px; color: #000; text-decoration: none; font-weight: bold; padding-left: 10px; }
+
+.OddsDetailsSE { height: 40px; line-height: 40px; background-color: #3f444e; padding-left: 10px; border-top-left-radius: 3px; border-top-right-radius: 3px; font-size: 12px; color: #ffffff; font-weight: bold; }
+.OddsDetailsClasseQuota { background-color: #D1D0CC; font-weight: bold; padding: 2px; }
+
+.OddsDetailsClasseQuotaDett, 
+.OddsDetailsClasseQuotaDettSel {
+    background-image:url(images/icons/Subevent_open.png); 
+    background-repeat:no-repeat; 
+    background-position:right 0; 
+    color:#000; 
+    font-weight:bold; 
+    font-size:10px; 
+    padding:2px 2px 2px 4px; 
+    border-top: none;
+    cursor:pointer;
+    border:1px solid #d3d9db;
+    border-top:0;
+    border-bottom:0;
+    padding-left:10px;
+    background: #f9f9f9; /* Old browsers */
+    background: -moz-linear-gradient(top,  #f9f9f9 12%, #eeeeee 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(12%,#f9f9f9), color-stop(100%,#eeeeee)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #f9f9f9 12%,#eeeeee 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #f9f9f9 12%,#eeeeee 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #f9f9f9 12%,#eeeeee 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #f9f9f9 12%,#eeeeee 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#eeeeee',GradientType=0 ); /* IE6-9 */
+}
+.dgQuoteDett.OddsDetailsClasseQuotaDettSel { background-image: url(images/icons/Subevent_open.png); background-repeat: no-repeat; background-position: right center; background-color: #f9f9f9; border-bottom: 1px solid #D3D9DB; height: 17px; }
+
+.dgQuoteDett .OddsQuotaItemStyleTQ .oddsTQ { float: left; line-height: 26px; font-weight: bold; color: #4e525b; font-size: 11px; padding-left: 10px; }
+.dgQuoteDett .OddsQuotaItemStyleTQ .oddsQ { float: right; }
+
+.dgQuoteDett .OddsQuotaItemStyleTQ .oddsQ > a {
+    width: 41px;
+    height: 26px;
+    line-height: 26px;    
+    border: 1px solid #7aa5cc;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    background-color:#005ea1;
+}
+.dgQuoteDett .OddsQuotaItemStyleTQ .oddsQ > a:hover {
+    background-color:#15376e;
+    border:1px solid #7aa5cc; 
+    color:#fff
+}
+.dgQuoteDett .OddsQuotaItemStyleTQ .OddGB_0_0, 
+.dgQuoteDett .OddsQuotaItemStyleTQ .OddGB_1_0,
+.dgQuoteDett .OddsQuotaItemStyleTQ .OddGB_2_0,
+.dgQuoteDett .OddsQuotaItemStyleTQ .OddGB_3_0,
+.dgQuoteDett .OddsQuotaItemStyleTQ .OddGB_4_0,
+.dgQuoteDett .OddsQuotaItemStyleTQ .OddGB_5_0,
+.dgQuoteDett .OddsQuotaItemStyleTQ .OddGB_10_0,
+.dgQuoteDett .OddsQuotaItemStyleTQ .OddGB_0_1, 
+.dgQuoteDett .OddsQuotaItemStyleTQ .OddGB_1_1,
+.dgQuoteDett .OddsQuotaItemStyleTQ .OddGB_2_1,
+.dgQuoteDett .OddsQuotaItemStyleTQ .OddGB_3_1,
+.dgQuoteDett .OddsQuotaItemStyleTQ .OddGB_4_1,
+.dgQuoteDett .OddsQuotaItemStyleTQ .OddGB_5_1,
+.dgQuoteDett .OddsQuotaItemStyleTQ .OddGB_10_1 { background-color: #fff; }
+
+.dgQuote,
+.dgQuoteDett { width: 100%; height: 100%; }
+
+.dgQuoteDett { border: 1px solid #D3D9DB !important; }
+
+.dgQuoteDett .OddsQuotaItemStyleTQ .QuotaSel .oddsTQ { font-size: 10px; font-weight: normal; color: #FFFFFF; }
+
+.dgQuoteDett .OddsQuotaItemStyleTQ .OddGB_0_0:hover .oddsQ a, .OddsQuotaItemStyleTQ .OddGB_0_1:hover .oddsQ a,
+.dgQuoteDett .OddsQuotaItemStyleTQ .OddGB_1_0:hover .oddsQ a, .OddsQuotaItemStyleTQ .OddGB_1_1:hover .oddsQ a,
+.dgQuoteDett .OddsQuotaItemStyleTQ .OddGB_2_0:hover .oddsQ a, .OddsQuotaItemStyleTQ .OddGB_2_1:hover .oddsQ a,
+.dgQuoteDett .OddsQuotaItemStyleTQ .OddGB_3_0:hover .oddsQ a, .OddsQuotaItemStyleTQ .OddGB_3_1:hover .oddsQ a,
+.dgQuoteDett .OddsQuotaItemStyleTQ .OddGB_4_0:hover .oddsQ a, .OddsQuotaItemStyleTQ .OddGB_4_1:hover .oddsQ a,
+.dgQuoteDett .OddsQuotaItemStyleTQ .OddGB_5_0:hover .oddsQ a, .OddsQuotaItemStyleTQ .OddGB_5_1:hover .oddsQ a,
+.dgQuoteDett .OddsQuotaItemStyleTQ .OddGB_10_0:hover .oddsQ a, .OddsQuotaItemStyleTQ .OddGB_10_1:hover .oddsQ a { text-decoration: none; font-weight: bold; }
+
+.dgQuoteDett .OddsQuotaItemStyleTQ .OddGB_0_0:hover .oddsTQ, .OddsQuotaItemStyleTQ .OddGB_0_1:hover .oddsTQ,
+.dgQuoteDett .OddsQuotaItemStyleTQ .OddGB_1_0:hover .oddsTQ, .OddsQuotaItemStyleTQ .OddGB_1_1:hover .oddsTQ,
+.dgQuoteDett .OddsQuotaItemStyleTQ .OddGB_2_0:hover .oddsTQ, .OddsQuotaItemStyleTQ .OddGB_2_1:hover .oddsTQ,
+.dgQuoteDett .OddsQuotaItemStyleTQ .OddGB_3_0:hover .oddsTQ, .OddsQuotaItemStyleTQ .OddGB_3_1:hover .oddsTQ,
+.dgQuoteDett .OddsQuotaItemStyleTQ .OddGB_4_0:hover .oddsTQ, .OddsQuotaItemStyleTQ .OddGB_4_1:hover .oddsTQ,
+.dgQuoteDett .OddsQuotaItemStyleTQ .OddGB_5_0:hover .oddsTQ, .OddsQuotaItemStyleTQ .OddGB_5_1:hover .oddsTQ,
+.dgQuoteDett .OddsQuotaItemStyleTQ .OddGB_10_0:hover .oddsTQ, .OddsQuotaItemStyleTQ .OddGB_10_1:hover .oddsTQ { color: #4e525b; }
+
+
+/*NUOVO DETTAGLIO SOTTO EVENTO*/
+.bodyMainPop #divDett { position: relative; }
+.bodyMainPop #divDett .OddsDetailsSE { display: block !important; }
+.bodyMainPop #divDett #SEOddsDataSE { display: block !important; position: absolute; right: 10px; top: 0px; height: 40px; line-height: 45px; color: #fff; }
+.bodyMainPop #divDett .SEItem { margin-bottom: 5px; border: 1px solid #d3d9db; position: relative; }
+.bodyMainPop #divDett .SEItem.closed { height: 26px; overflow: hidden; }
+
+.bodyMainPop #divDett .DescPuls { height: 15px; width: 15px; font-size: 0; background-image: url(images/icons/Subevent_close.png); position: absolute; right: 5px; top: 5px; cursor: pointer; }
+.bodyMainPop #divDett .DescPuls.sel { background-image: url(images/icons/Subevent_open.png); }
+.bodyMainPop #divDett .SEItem.closed .DescPuls { display: none; }
+
+.bodyMainPop #divDett .DescInfo { padding: 10px; font-size: 11px; color: #65696c; line-height: 15px; display: none; }
+.bodyMainPop #divDett .DescInfo.sel { display: block; }
+.bodyMainPop #divDett .SECQ {
+  position:relative;
+    height:26px; line-height:26px;
+    background-repeat:no-repeat; 
+    background-position:right 0; 
+    color:#000; 
+    font-weight:bold; 
+    font-size:11px; 
+    padding:0 2px 0 25px; 
+    cursor:pointer;
+    border-bottom:1px solid #d3d9db;
+    background: #f9f9f9; /* Old browsers */
+    background: -moz-linear-gradient(top,  #f9f9f9 12%, #eeeeee 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(12%,#f9f9f9), color-stop(100%,#eeeeee)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #f9f9f9 12%,#eeeeee 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #f9f9f9 12%,#eeeeee 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #f9f9f9 12%,#eeeeee 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #f9f9f9 12%,#eeeeee 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#eeeeee',GradientType=0 ); /* IE6-9 */  
+    clear:both; 
+}
+.bodyMainPop #divDett .SECQ:before{content:"";position:absolute;left:7px;top:7px;height:10px;width:10px; background-image:url(Images/ev_arrow_open.png); background-position:center; background-repeat:no-repeat;}
+.bodyMainPop #divDett .SEItem.closed .SECQ:before{background-image:url(Images/ev_arrow_close.png);}
+.bodyMainPop #divDett .SEOdds {font-size:0; }
+.bodyMainPop #divDett .SEOdds .SEOdd{ height:26px; border-top:1px solid #d3d9db; line-height:26px; position:relative;  padding:0; margin:0; border-spacing:0; border-collapse:collapse; display:inline-block; font-size:12px; }
+.bodyMainPop #divDett .SEOdds .SEOdd .SEOddsTQ{ display: inline; padding-left:5px; font-size:11px; color:#65696c;}
+.bodyMainPop #divDett .SEOdds .SEOdd .SEOddLnk {display:block; position:absolute; right:0; top:0;
+    width: 41px;
+    height: 26px;
+    line-height: 26px;    
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid #7aa5cc;
+    background-color:#005ea1;
+    border-bottom:0;
+    color:#fff
+}
+.bodyMainPop #divDett .SEOdds .SEOdd.empty .SEOddLnk:hover { cursor: default; }
+
+.bodyMainPop #divDett .SEOdds .SEOdd .SEOddLnk:hover {
+    background-color:#15376e;
+    }
+
+.bodyMainPop #divDett .SEOdds .SEOdd.sel .SEOddLnk {
+    background-color:#fbd115;
+    color:#000; 
+    border: 1px solid #b2ae6b;
+}

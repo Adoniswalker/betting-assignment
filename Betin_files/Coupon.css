@@ -1,0 +1,487 @@
+﻿.divCoupon { margin: 0 0 0 0; z-index: 1; width: 216px; background-color: #FFF; }
+.divCouponHome { margin: 0 0 0 0; width: 216px; background-color: #FFF; }
+
+/*HEADER COUPON*/
+.divCoupon .Top,
+.divCouponHome .Top { padding: 0 0 0 10px; height: 29px; width: 204px; background-color: #3f444e; position: relative; color: #FFFFFF; border-radius: 2px 2px 0 0;border-left:1px solid #DCE1E3; border-right:1px solid #DCE1E3 }
+.divCoupon .Top H3,
+.divCouponHome .Top H3 { margin: 0; padding: 2px; line-height: 26px; font-weight: bold; color: #FFFFFF; font-size: 12px; position: absolute; text-transform: capitalize; }
+.divCoupon .Top SPAN,
+.divCouponHome .Top SPAN { position: absolute; color: #FFFFFF; right:7px; top:0; white-space: nowrap; font-size: 12px; font-weight: bold; padding: 2px; padding-right:23px; line-height: 26px; }
+.divCoupon .Top .lnkBlocca { position: absolute; right: 12px; top: 4px; width: 19px; height: 19px; display: block; background-image: url(images/coupon_bloccato.png); background-position: center center; background-repeat: no-repeat; }
+.divCoupon .Top .lnkSblocca { position: absolute; right: 12px; top: 4px; width: 19px; height: 19px; display: block; background-image: url(images/coupon_sbloccato.png); background-position: center center; background-repeat: no-repeat; }
+.divCoupon .Btm,
+.divCouponHome .Btm { height: 10px; background-color: #ffffff; width: 216px; }
+
+.divCoupon .Top .lnkMainSettings,
+.divCouponHome .Top .lnkMainSettings {
+    display: block;
+    border-bottom-left-radius:3px;
+    position: absolute;
+    height: 21px;
+    width: 21px;
+    top: 4px;
+    right: 4px;
+    background-color:#2a2e37;
+    cursor: pointer;
+    border-radius:3px;
+    background-image:url(images/icons/coupon_settings.png); 
+    background-repeat:no-repeat; 
+    background-position:center;
+}
+
+.divCoupon .Cnt .couponempty .lnkMainSettings,
+.divCouponHome .Cnt .couponempty .lnkMainSettings{display:none;}
+
+/*CONTENT*/
+.divCoupon .Cnt,
+.divCouponHome .Cnt { margin: 0; border: 0; font-size: 12px; padding-bottom: 1px; padding: 0; background-color: #fff; width: 216px; }
+.CouponMainEmpty { padding: 2px 19px 2px 15px; color: #000000; }
+/*COUPON IN ATTESA LIVE*/
+.cpnDivAttesa { padding: 0 14px 0 13px; }
+
+/*COUPON IN COMPILAZIONE*/
+.CouponMainIns,
+.CouponMainConf { padding: 0; border-left:1px solid #DCE1E3; border-right:1px solid #DCE1E3}
+.couponempty { padding: 5px; color: #42464c; font-size: 12px; }
+
+/*scommessa inserimento/conferma*/
+.CouponMainIns .CItems,
+.CouponMainConf .CItems { position: relative; }
+
+.CouponMainIns .CItem,
+.CouponMainConf .CItem { position: relative; color: #42464c; font-size: 12px; font-weight: bold; background-color: #fff; border-bottom: 1px solid #dce1e3; }
+
+.CouponMainIns .CItem:hover .CEvento,
+.CouponMainConf .CItem:hover .CEvento { display: block; }
+
+.CItem .CInfo { display: none; }
+.CItem .COdds { position: relative; }
+.CItem .Cerror { width: 16px; height: 16px; position: absolute; right: 65px; bottom: 2px; background-image: url(images/Error_small.png); background-repeat: no-repeat; }
+.CItem .CCodPub { position: absolute; left: 0; top: 0; width: 34px; line-height: 16px; font-size: 11px; font-weight: bold; color: #42464c; text-align: right; }
+.CItem .CEvento { 
+    display: none; 
+    position: absolute; top: -22px; right: 2px; z-index: 10; width: auto; padding: 0 5px; background-color: #4a4f5a; color: #fff; font-size: 11px; height: 23px; line-height: 23px; 
+    border-radius: 3px; box-shadow: 0 0 3px #fff; white-space: nowrap;
+}
+.CItem .CEvento:after { content: ''; position: absolute; right: 23px; bottom: -5px; border-top: 5px solid #4a4f5a; border-left: 5px solid transparent; border-right: 5px solid transparent; }
+
+.CItem .CFissa { position: absolute; right: 3px; top: -16px; z-index: 1; height: 16px; width: 13px; }
+.CItem .CSubEv { position: relative; z-index: 1; height: 16px; line-height: 16px;  padding: 0; padding-left: 39px; font-size: 11px; font-weight: bold; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.CItem .CSubEv > span { display: block; width: 158px; overflow: hidden; text-overflow: ellipsis; }
+.CItem .CSegno { font-size: 11px; line-height: 15px; font-weight: bold; color: #42464c; padding-left: 39px; width: 122px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.CItem .CSegno .CqSegno { margin: 0 0 0 0; font-weight: normal; font-size: 11px; opacity: 0.8; }
+.CItem .CSegno .ClblSegno { display: none; }
+.CItem .CSegno span { padding-right: 5px; }
+.CItem .CDelete { position: absolute; right: 3px; top: -1px; width: 13px; height: 14px; display: block; background-image: url(images/btn_cancella_rosso.gif); background-repeat: no-repeat; background-position: center center; }
+.CItem .CFissa .lnkFissaOff,
+.CItem .CFissa .lnkFissaOn { display: block; height: 16px; width: 13px; background-image: url(images/icons/Banker.gif); background-position: left center; background-repeat: no-repeat; }
+.CItem .CFissa .lnkFissaOff { background-image: url(images/icons/NoBanker.gif); }
+.CItem .ClblSegno span { }
+
+.CItem.te10 { border-color: #fbd115; }
+.CItem.te10:before { content: ""; position: absolute; left: -11px; top: 0; bottom: -1px; z-index: 1000; width: 12px; border-radius: 6px 0 0 6px; background-color: #fbd115; box-shadow: -1px 0px 2px #000; }
+.CItem.te10:after { 
+    content: "Live"; position: absolute; left: -19px; top: 11px; z-index: 1001; width: 29px; height: 10px; line-height: 10px;
+    text-align: center; font-size: 10px; font-weight: bold; text-transform: uppercase; color: #3f434e; 
+    -moz-transform: rotate(-90deg); -ms-transform: rotate(-90deg); -o-transform: rotate(-90deg); -webkit-transform: rotate(-90deg); transform: rotate(-90deg);
+}
+
+.CItem .valQuota,
+.CItem .valQuota_0,
+.CItem .valQuota_1,
+.CItem .valQuota_2,
+.CItem .valQuota_3,
+.CItem .valQuota_4,
+.CItem .valQuota_5,
+.CItem .valQuota_10 { text-align: right; font-size: 11px; font-weight: bold; line-height: 15px; position: absolute; right: 20px; top: 0; color:#005ea1 }
+
+.valQuota_0 { color: #ffa000; }
+.valQuota_1 { color: #000; }
+.valQuota_2 { color: #ff6919; }
+.valQuota_3 { color: #1d861d; }
+.valQuota_4 { color: #2574ab; }
+.valQuota_5 { color: #bf0000; }
+.valQuota_10 { color: #b131a0; }
+
+/*sottoevento disabilitato in piazzamento*/
+.CItem .COdds.E_RimuoviSottoeventiDisPiazzamento { 
+    background-color: #ab1618;
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255,255,255,.25) 10px, rgba(255,255,255,.25) 20px);
+    box-shadow: inset 0 0 0 2px #fff;
+}
+.CItem .COdds.E_RimuoviSottoeventiDisPiazzamento .valQuota,
+.CItem .COdds.E_RimuoviSottoeventiDisPiazzamento .valQuota_0,
+.CItem .COdds.E_RimuoviSottoeventiDisPiazzamento .valQuota_1,
+.CItem .COdds.E_RimuoviSottoeventiDisPiazzamento .valQuota_2,
+.CItem .COdds.E_RimuoviSottoeventiDisPiazzamento .valQuota_3,
+.CItem .COdds.E_RimuoviSottoeventiDisPiazzamento .valQuota_4,
+.CItem .COdds.E_RimuoviSottoeventiDisPiazzamento .valQuota_5,
+.CItem .COdds.E_RimuoviSottoeventiDisPiazzamento .valQuota_10,
+.CItem .COdds.E_RimuoviSottoeventiDisPiazzamento .Cerror { display: none; }
+
+.CItem .COdds.E_RimuoviSottoeventiDisPiazzamento .CSegno { color: #fff; }
+
+/*items in Conferma*/
+.CouponMainConf .CpnTipoRiep.HighImp{ border-top:3px solid #005ea1;}
+.CouponMainConf .CItem { }
+.CouponMainConf .CItem .CSubEv { }
+.CouponMainConf .CItem .COdds { }
+.CouponMainConf .CItem .CEvento { }
+.CouponMainConf .CItem .CSegno { }
+.CouponMainConf .CItem .CFissa { display: none; }
+
+.CouponMainConf .CItem .valQuota,
+.CouponMainConf .CItem .valQuota_0,
+.CouponMainConf .CItem .valQuota_1,
+.CouponMainConf .CItem .valQuota_2,
+.CouponMainConf .CItem .valQuota_3,
+.CouponMainConf .CItem .valQuota_4,
+.CouponMainConf .CItem .valQuota_5,
+.CouponMainConf .CItem .valQuota_10 { }
+
+/*items in errore "True"*/
+.CouponMainIns .COdds.True .Cerror { width: 16px; height: 16px; position: absolute; left:3px; bottom: 2px; background-image: url(images/Error_small.png); background-position: center center; background-repeat: no-repeat; }
+
+/*dati utente*/
+.CouponUserData { 
+    margin: 0; 
+    padding: 0 5px 5px 5px; 
+    position: relative; 
+    text-align: center; 
+    color: #FFFFFF; 
+    border-radius:3px 3px 0 0; 
+    border-bottom:1px solid #7aa5cc;
+    background-color:#005ea1;
+}
+.CouponUserDataHdr { height: 15px; font-size: 12px; font-weight: bold; border-bottom: 2px solid #fff; margin: 0; line-height: 15px; color: #fff; text-align: center; }
+.CouponUserData .Saldo { background-color: #3f444e; text-align: center; margin: 3px 0; }
+.dropdown.CpnUser { width: 135px; }
+
+/*riepilogo importi tipiscommessa*/
+.divCoupon .TextBox,
+.divCouponHome .TextBox { height: 16px; line-height: 16px; padding: 0 3px; border: 1px solid #ddd; -webkit-box-shadow: inset 0 1px 5px 0 #ddd; box-shadow: inset 0 1px 5px 0 #ddd; }
+
+.CouponMainIns .divCpnTipi { position: relative; }
+.CouponMainConf .divCpnTipi { font-size: 12px; color: #42464C; background-color: #fff; }
+
+.CouponMainIns .divCpnTipi .divCpnTipo { padding: 0; font-size: 12px; font-weight: bold; margin: 0; height: 27px; line-height: 26px; text-transform: uppercase; color: #ffffff; width: 105px; text-align: center; overflow: hidden; }
+.CouponMainIns .divCpnTipi .divCpnTipo.Mul { cursor: pointer; background: #3f444e; border-top: 2px solid #3f444e; border-left: 2px solid #3f444e; border-right: 2px solid #3f444e; height: 24px; border-bottom: 3px solid #005ea1; }
+.CouponMainIns .divCpnTipi .divCpnTipo.Sis { position: absolute; top: 0; right: 0; cursor: pointer; background: #3f444e; height: 24px; border-top: 2px solid #3f444e; border-right: 2px solid #3f444e; border-bottom: 3px solid #005ea1; }
+.CouponMainIns .divCpnTipi .divCpnTipo.DI { width: 100%; }
+
+.CpnPulsBonus A,
+.CouponMainIns .divCpnTipi .sel .divCpnTipo { 
+    cursor:pointer;
+	background-color:#fbd115;
+    color:#000;
+}
+.CouponMainIns .divCpnTipi .divCpnTipo a { display: block; color: #fff; text-decoration: none; }
+.CouponMainIns .divCpnTipi .sel .divCpnTipo a { color: #000; text-decoration: none; }
+.CouponMainIns .divCpnTipi .sel.singola .divCpnTipo {display:none;}
+.CouponMainIns .divCpnTipi .sel.singola .CpnTipoRiep.todds{display:none;}
+.CouponMainIns .divCpnTipi .CpnTipoRiep.todds{ background-color:#3f444e; color:#fff; border:0;}
+
+.CouponMainIns .divCpnTipo img { display: none; }
+.CouponMainIns .divCpnTipoCnt { font-size: 12px; margin: 0; color: #42464c; background-color: #fff; padding: 0; /*float: left;*/}
+
+.CpnTipoRiep, .CpnTipoRiepRagg { height: 20px; line-height: 20px; border-bottom: 1px solid #dce1e3; position: relative; clear: both;padding:0 10px;}
+.CpnTipoRiepRagg {  height: 23px; line-height: 24px; margin:0; }
+.CpnTipoRiep.stake{background-color:#ebebeb; color:#3f444e; height:27px; line-height:27px;}
+.CpnTipoRiep .RiepSX, .CpnTipoRiepRagg .RiepSX { float: left; font-weight: normal; }
+.CpnTipoRiep .RiepDX, .CpnTipoRiepRagg .RiepDX { float: right; text-align: right; margin: 0px; font-size: 12px; }
+.CpnTipoRiep .lnkRefresh { padding-left: 10px; padding-top: 5px; float: left; background-image: url(Images/Icons/Refresh_cpn_ico.png); width: 15px; height: 15px; background-position: center center; background-repeat: no-repeat; }
+.CpnTipoRiepRagg .RiepSX A { cursor: pointer; background-image: url(images/coupon_selezionaTutti.gif); background-repeat: no-repeat; background-position: left center; padding-left: 19px; display: block;  }
+.CpnTipoRiepDbl { height: 35px; position: relative; clear: both;  border-bottom:1px solid #DCE1E3;}
+.CpnTipoRiepDbl .RiepSX { float: left; font-weight: normal; line-height: 35px; margin-left: 10px; }
+.CpnTipoRiepDbl .RiepDX { float: right; text-align: right; line-height: 17px; margin-right: 10px; font-size:11px;}
+.CpnTipoRiepDbl .lnkRefresh { padding-left: 10px; float: left; background-image: url(Images/Icons/Refresh_cpn_ico.png); width: 20px; height: 35px; background-position: center center; background-repeat: no-repeat; }
+
+.CpnTipoRiep.High, .CpnTipoRiepDbl.High { font-weight: bold; }
+.CpnTipoRiep.HighImp, .CpnTipoRiepDbl.HighImp { font-weight: bold; }
+
+.CpnTipoBonus { display: none;  }
+.CpnTipoBonus .RiepSX { display: none; }
+
+/*Importo Scommessa Sistema*/
+.CpnTipoSisRiepHdr { position: relative; height: 51px; margin-top: 3px; border-bottom:1px solid #DCE1E3;}
+.CpnTipoSisRiepHdr { height: 25px; font-size: 12px; font-weight: bold; background-color: #3F444E; margin: 0; color: #fff; border-bottom:1px solid #3F444E; margin-bottom:5px; }
+.CpnTipoSisRiep{ position: relative; height: 25px; margin-top: 3px; border-bottom:1px solid #DCE1E3;font-size: 11px}
+.CpnTipoSisRiep.sel{height:45px;}
+.CpnTipoSisRiep.sel .TSVinLbl{display:block;}
+.CpnTipoSisRiep.sel .TSVin{display:block;}
+.CpnTipoSisRiep .TSChk { display: block; position: absolute; left: 8px; top: 3px; height: 20px; line-height: 20px; width: 20px; cursor:pointer; }
+.CpnTipoSisRiep .TSHid { display: block; display: none; }
+.CpnTipoSisRiep .TSTipo { display: block; position: absolute; left: 28px; top: 2px; height: 20px; line-height: 20px; width: 100px; font-weight:bold; }
+.CpnTipoSisRiep .TSNComb { display: block; position: absolute; left: 108px; top: 2px; height: 20px; line-height: 20px; width: 30px; }
+.CpnTipoSisRiep .TSTxt { display: block; position: absolute; right: 10px; top: 2px; }
+.CpnTipoSisRiep .TSVinLbl { display: none; position: absolute; left: 10px; top: 25px; height: 20px; line-height: 20px; white-space: nowrap; font-weight:bold; }
+.CpnTipoSisRiep .TSVin { display: none; position: absolute; right: 10px; top: 25px; height: 20px; line-height: 20px; background-color: #fff; padding-left: 3px; }
+
+.CpnTipoSisRiepHdr .TSTipo { display: block; position: absolute; left: 10px; top: 0; height: 20px; line-height: 24px; width: 50px; }
+.CpnTipoSisRiepHdr .TSNComb { display: block; position: absolute; left: 70px; top: 0; height: 20px; line-height: 24px; width: 30px; }
+.CpnTipoSisRiepHdr .TSTxt { display: block; position: absolute; right: 10px; top: 0; height: 20px; line-height: 24px; }
+
+/*Pulsanti*/
+.CpnPuls { height: 41px; clear: both; background:#fff; border-bottom:1px solid #dce1e3;}
+.CpnPuls .btnCoupon.sx { float: left;  color: #005ea1; line-height:41px; font-weight:normal; }
+.CpnPuls .btnCoupon.dx { 
+    float:right; 
+    cursor:pointer; 
+    color:#000; 
+    border-radius:2px;
+    background-color:#fbd115;
+    height:26px;
+    line-height:26px;
+    margin-top:8px;
+    margin-right:8px;
+    width:85px;
+    text-transform:uppercase;
+}
+.CpnPuls .btnCoupon { display: block; width: 65px; line-height: 20px; text-decoration: none; color: #000; text-align: center; font-weight: bold; }
+.CpnPuls:hover { color: #005ea1; }
+
+.btnCoupon:hover {}
+
+/*RICARICA COUPON*/
+.divCpnTipoRic {
+    padding:0px;
+    font-size:12px;
+    font-weight:bold;
+    margin:0;
+    height:16px;
+    line-height:16px;
+    text-transform:uppercase;
+    color:#000;
+    background-color:#ffffff;
+    overflow:hidden;
+}
+.divCpnTipoRicCnt { padding: 0 13px 3px 0px; }
+
+.divCpnTipoRicCnt .ScommRisTRAItem,
+.divCpnTipoRicCnt .ScommRisTRItem { height: 18px; border-bottom: 1px solid #ccc; }
+
+.divCpnTipoRicCnt a { text-decoration: none; display: block; line-height: 18px; font-weight: bold; color: #000; font-size: 11px; }
+.divCpnTipoRicCnt a.sx { float: left; }
+.divCpnTipoRicCnt a.dx { float: right; }
+
+/*COUPON ACCETTATO*/
+.CouponMainAccepted { background-repeat: repeat-y; margin: 0; font-size: 12px; margin: 1px 0 0 0; color: #fff; background-color: #005ea1; padding: 5px; }
+.CouponMainAccepted INPUT { margin: 2px auto 0 auto; display: block; }
+.CouponMainAccepted IMG { float: left; }
+
+.divCouponError, 
+.divCouponErrorGen {
+    position:relative;
+    border:1px solid #fdb6b6;
+	background-color:#ffdddd;
+	margin:0 3px 3px 3px;
+	color:#8d4039;
+	font-weight:bold;
+	font-size:11px;
+	background-repeat:no-repeat;
+    background-position:5px center;
+    padding:10px 5px 10px 42px;
+}
+.divCouponErrorGen { margin: 5px 0;}
+
+.CouponUserData .cboUtenti { height: 20px; }
+.CouponUserData .cboUtenti .txtUtente { float: left; height: 20px; position: relative; }
+.CouponUserData .cboUtenti .txtUtente INPUT { position: absolute; top: 0; left: 0; height: 16px !important; border: 0; }
+.CouponUserData .cboUtenti .cboUtente { float: right; width: 135px; overflow: hidden; position: relative; height: 20px; }
+
+.CouponUserData .dropdown.Expanded { width: auto; }
+.CouponUserData .dropdown { width: 135px; position: absolute; left: 0; top: 0; height: 18px; border: 0; }
+
+/**/
+.divScommRis { margin-bottom:10px; font-size: 11px; }
+.divScommRis A,
+.divScommRic A { text-decoration: none; color: #000000; font-weight: bold; }
+.ScommRisTRItem { height: 18px; background-color: #fff; }
+.ScommRisTRAItem { height: 18px; background-color: #fff; }
+.ScommRisTRItem TD,
+.ScommRisTRAItem TD { border-bottom: 1px solid #ccc; }
+.ScoRisParzialeA .tdParziale { background-color: #dadada; padding: 5px; border: 1px solid #a3a2a2; color: #000000; }
+.ScoRisParziale .tdParziale { background-color: #dadada; padding: 5px; border: 1px solid #a3a2a2; color: #000000; }
+.divScommRis .Accettato { color: #000000; font-weight: bold; height: 25px; }
+.cancCoupon { float: right; margin: 1px 7px 0 0; }
+.stampaCoupon a:link { float: left; text-decoration: none; color: #000000; }
+.stampaCoupon a:visited { float: left; text-decoration: none; color: #000000; }
+.stampaCoupon a:hover { float: left; text-decoration: none; color: #666666; }
+.btnRosso { float: right; padding-top: 1px; }
+.divMainCPreJC {margin: 0 auto; overflow: hidden; position: relative;}
+.divInfoCPre {font-size: 11px; color: #000000; margin-bottom:5px; padding-top:5px; padding-left:5px; }
+.linkBlack { color: #000; font-weight: bold; }
+
+/******* COUPON PRECOMPILATI******/
+#CPreJC { border-bottom: 4px solid #ebebeb; }
+#CPreJC > DIV.CPreCon { display: none; }
+#CPreJC > DIV.CPreTit { color: #3f444e; background-image: url(images/Cpre_accordion.png); background-position: left bottom; background-repeat: no-repeat; display: block; height: 25px; line-height: 25px; padding-left: 22px; font-weight: bold; border-top: 4px solid #ebebeb; cursor: pointer; }
+#CPreJC > DIV.CPreTit.sel { background-position: left top; }
+.CPreRiep.Importo { background-color:#005ea1; border: 0; color: #FFF; }
+.CPreRiep.Importo input { border-color: #fff; }
+.CPreRiep.Importo span { color: #fff; }
+
+.CPreItem {position: relative; height: 55px; margin-bottom: 4px; border-top:1px solid #ebebeb; }
+.CPreSubEv { width: 202px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; line-height: 18px; padding-left: 5px; font-size: 11px; color: #42464c; }
+.CPreEv { width: 202px; padding-left: 5px; font-weight: bold; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; height: 14px; line-height: 14px; font-size: 11px; color: #42464c; }
+.CPreSegno { position: absolute; bottom: 3px; left: 5px; font-weight: bold; color: #42464c; }
+.CPreQuota { position: absolute; bottom: 3px; right: 10px; font-weight: bold; color:#005ea1; }
+.CPreRiep { width: 207px; padding-left: 2px; position: relative; height: 27px; line-height: 27px; border-bottom: 1px solid #d0d3da; font-size: 11px; color: #4e525b; font-weight: bold; }
+.CPreRiep SPAN { position: absolute; display: block; top: 0; right: 4px; height: 27px; line-height: 27px; color: #005ea1; }
+.CPreRiep SPAN INPUT { font-size: 11px; height: 17px; line-height: 16px; padding: 0 3px; border: 1px solid #535353; width: 50px; margin: 3px 0 0 0; }
+.CPrePrev { background-position: center; background-repeat: no-repeat; cursor: pointer; position: absolute; bottom: 4px; left: 10px; height: 34px; width: 20px; background-image: url(images/Cpn_Pre_prev_bg.png); }
+.CPreNext { background-position: center; background-repeat: no-repeat; cursor: pointer; position: absolute; bottom: 4px; right: 10px; height: 34px; width: 20px; background-image: url(images/Cpn_Pre_next_bg.png); }
+.CPrePuls { height: 34px; line-height: 34px;}
+.CPrePuls A {
+    display: block;
+	width: 121px;
+    border-radius:2px;
+    background-color:#005ea1;
+    height:26px;
+    line-height:26px;
+    margin: 8px auto 0 auto;
+    text-transform:uppercase;
+    text-align:center;
+    color:#fff;
+    text-decoration:none;
+    font-weight:bold;
+    opacity:0.7;
+    cursor:default;
+}
+.CPrePuls A.sel { opacity: 1; cursor: pointer; }
+
+.PCDisclaimerBonus { clear: both; border: 1px solid #000000; padding: 2px 5px 5px 5px; margin: 5px 0 5px 0; text-align: center; }
+.CpnPulsBonus { }
+.CpnPulsBonus A { display: block; color: #FFF; font-weight: bold; text-align: center; background-color: #8e0303; border: 1px solid #18233a; height: 18px; line-height: 18px; text-decoration: none; margin: 6px 4px 3px 4px; }
+.CpnPulsBonus A:hover { color: #fff; background-color: #db0101; border: 1px solid #FF0000; background-image: none; }
+.divDisclaimerBonus { padding: 5px; margin: 5px 6px 0 6px; background-color: #f3e6b9; color: #22314e; border-radius: 3px; }
+
+/* Animazione Live Alternativa (HTML) */
+.divAnimazioneLiveHTML { background-image: url('Images/waiting_Live.gif'); background-repeat: no-repeat; background-position: center 10px; width: 170px; margin: 10px auto; border: 3px solid #005ea1; height: 70px; position: relative; }
+.divAnimazioneLiveHTML span { position: absolute; width: 170px; text-align: center; bottom: 0px; color: #005ea1; font-weight: bold; }
+
+
+/*#region Prenota coupon*/
+.divNumPrenotato{}
+.divNumPrenotato .info{padding:5px;}
+.divNumPrenotato .value{padding:5px; padding-top:0;}
+.divNumPrenotato .pnlLnk{height:20px; padding-top:10px;}
+.divNumPrenotato .TextBox { box-shadow:none;  margin:0;height:18px; line-height:18px;border-color:#b7b7b7; }
+.divNumPrenotato .lnk{     
+    border-top:1px solid #7aa5cc;
+    border-radius:2px;
+    background-color:#005ea1;
+    line-height:20px; height:19px;
+    display:block;
+    text-transform:uppercase;
+    text-decoration:none;
+    color:#FFF;
+    font-size:11px;
+    font-weight:bold;
+    padding:0 5px;
+}
+.divNumPrenotato .lnk.Load{ float:right;}
+.divNumPrenotato .lnk.Cancel{float:left; font-size:12px; border:0; background-image:none; background-color:transparent; color:#005ea1; font-weight:normal; padding-left:0; text-transform:none }
+.divNumPrenotato .lnk.Ok{float:right;}
+
+.divNumPrenotato .msg { padding: 10px; background-color: #c7e0f2; border: 1px solid #bfd1de; margin-bottom: 5px; }
+.divNumPrenotato .msg.KO { background-color: #ffdddc; border: 1px solid #ffb4c1; }
+.divNumPrenotato .msg.Partial { background-color: #f2f2f2; border: 1px solid #dadada; }
+
+.prenSco{padding:10px;}
+.prenSco #info{width:100%; float:left; margin-bottom:10px;}
+.prenSco #info .title{display:block; font-weight:bold;}
+.prenSco #info .content{display:block; min-height:50px;}
+.prenSco #info #play{width:calc(50% - 10px); float:left; padding-right:10px; min-height:100px;}
+.prenSco #info #register{width:calc(50% - 11px); float:left;padding-left:10px;border-left:1px solid #d9d9d9;min-height:90px;}
+.prenSco #info .lnk{
+    text-decoration:none;	
+	font-weight:bold;
+	font-size:12px;
+	height:28px;
+	padding:0 10px;
+	display:block;
+    float:left;
+	text-align:center;
+	line-height:27px;
+    margin:10px 10px 0 0;
+    cursor:pointer;
+    border-radius:2px;
+    background-color:#fbd115;
+    color:#000; 
+    border: 1px solid #b2ae6b;
+}
+.prenSco #info .lnk.Register { 
+    border: 1px solid #7aa5cc;
+    background-color:#005ea1;
+    color:#fff
+} 
+.prenSco #info .lnk.eMailFake { background-color: #363c40; border-top-color: #494f5b; color:#fff; background-image: none; }
+
+.prenSco #info .sendMail{ float:left; position:relative; height:39px; }
+.prenSco #info .sendMail .textbox{display:none; height:23px; float:left; margin-top:10px; margin-right:5px; width:140px !important;}
+.prenSco #info .sendMail .lnk.eMail{display:none;}
+.prenSco #info .sendMail .lnk.cancel{display:none; font-size:12px; border:0; margin-right:0; background-image:none; background-color:transparent; color:#005ea1; font-weight:normal; padding-left:0; text-transform:none }
+.prenSco #info .sendMail .imgError{position:absolute; top:17px; left:120px; display:none;}
+.prenSco #info .sendMail .ValidationSummary{display:none;}
+
+.prenSco #info .sendMail.active .lnk.eMailFake{display:none;}
+.prenSco #info .sendMail.active .textbox{display:block;}
+.prenSco #info .sendMail.active .lnk.eMail{display:block; font-size:0; position:relative; width:5px;}
+.prenSco #info .sendMail.active .lnk.eMail:after{content:"►"; font-size:13px; position:absolute; top:0; left:7px;}
+.prenSco #info .sendMail.active .lnk.cancel{display:block;}
+.prenSco #info .sendMail.active .imgError{display:block;}
+.prenSco #info .sendMail.active .ValidationSummary{display:block;}
+
+.prenSco #bookHead{clear:both; margin:10px 0; padding:5px; border:1px solid #d9d9d9; background-color:#f0f0f0; text-align:center;}
+.prenSco #bookHead .number{ font-size:15px; font-weight:bold;color:#616065;}
+.prenSco #bookHead .number SPAN{color:#005ea1;font-weight:bold; padding-left:10px; }
+.prenSco #bookHead .date{display:block;font-size:11px; line-height:18px;color:#616065;}
+
+.prenSco .rep{ font-weight:normal; }
+.prenSco .rep .item{height:32px; line-height:32px;border-bottom:1px solid #dfe1e3}
+.prenSco .rep .item.hdr{ background-color:#494f5b; height:29px; line-height:29px; font-weight:bold; color:#FFF; text-align:center; border:0;}
+
+.prenSco .rep .item DIV{float:left; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.prenSco .rep .item DIV.cod {width: 7%;text-align:center;}
+.prenSco .rep .item DIV.date {width: 20%;text-align:center; }
+.prenSco .rep .item DIV.event {width: 43%  }
+.prenSco .rep .item DIV.tipo {width: 15%;text-align:center; }
+.prenSco .rep .item DIV.tq {width: 15% ;text-align:center;}
+.prenSco .rep .item DIV.cq {display: none;}
+
+.prenSco #bookFooter{ text-align:center;}
+.prenSco #bookFooter .importo{ display:block; margin:10px 0; font-weight:bold; font-size:14px;}
+.prenSco #bookFooter .barcode{ display:block;}
+
+.prenSco .ValidationSummary{border:0; padding:0; margin:0; position:absolute; left:0; top:-5px;}
+.prenSco .ValidationSummary ul{ list-style-type:none; white-space:nowrap; color:red; margin:0; padding:0;}
+#backgroundPrenotatoreSco {
+	display:none;
+	position:fixed;
+	_position:absolute; /* hack for internet explorer 6*/
+	height:100%;
+	width:100%;
+	top:0;
+	left:0;
+	background:#000000;
+	z-index:2100;
+    }
+#popupPrenotatoreSco{
+	display:none;
+	position:fixed;
+	_position:absolute; /* hack for internet explorer 6*/
+	height:500px;
+	width:680px;
+	z-index:12000;
+	font-size:12px;
+    background-color:#FFF;
+    box-shadow: 0px 2px 10px #4d4d4d;
+    border-radius:0;
+    overflow:hidden;
+    }
+#popupPrenotatoreSco .divTitle{ height: 25px; position: relative; font-size: 12px; color: #FFFFFF; }
+#popupPrenotatoreSco #divBody IFRAME{height:475px; overflow-y:auto; width:100%;}
+#popupPrenotatoreScoClose{right: 6px; top: 4px; cursor:pointer; position: absolute;  display: block; background-image:url(Images/Icons/close_ico.png);height:15px; width:15px; background-repeat:no-repeat;}
+/*#endregion*/

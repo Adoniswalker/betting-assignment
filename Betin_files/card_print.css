@@ -1,0 +1,11 @@
+﻿/******************** STAMPA  **********************************/
+.PrintCardMainDiv { padding: 0.2cm; border: 1px solid #000000; width: 9.6cm; height: 5.6cm; font-family: arial; font-size: 12px; }
+.PrintCardTblHeader { border-bottom: 1px solid #000000; }
+.PrintCardTDImage { width: 100%; }
+.PrintCardLogo { width: 4cm; }
+.PrintCardTDCredito { font-size: 11px; text-align: left; }
+.PrintCardTDImporto { font-size: 40px; text-align: left; }
+.PrintCardBarCode { width: 2.5cm; }
+.PrintCardTDUsrPwd { text-align: right; }
+.PrintCardUsrPwd { width: 6cm; }
+.PrintCardTblFooter { margin-top: 0.2cm; border: 1px solid #000000; font-size: 11px; }

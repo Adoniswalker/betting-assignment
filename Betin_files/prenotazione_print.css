@@ -1,0 +1,60 @@
+﻿/******************** STAMPA  **********************************/
+.PrintCoupon { margin: 0; padding: 0; font-family: Arial; font-size: 11px; }
+.PrintCouponMainDiv { width: 255px; }
+
+.imgSfondoStampaCopia { position: absolute; top: 143px; left: 0; z-index: 1000; Display: block; }
+
+.PCAcceptedDate { text-transform: uppercase; border: 1px solid #000000; padding-top: 2px; padding-bottom: 2px; text-align: center; font-family: arial; font-weight: bold; font-size: 12px; }
+
+.PCLogo { text-align: center; margin: 0 0 10px 0; }
+.PCDatiSchedina { background-color: #FFFFFF; padding: 0; margin: 0 0 10px 0; border: 1px solid #000000; }
+.PCDatiSchedina .PCItemDate { text-indent: 5px; font-weight: bold; font-size: 12px; text-transform: uppercase; line-height: 16px; }
+.PCDatiSchedina .PCDatiItem { font-weight: bold; font-size: 12px; height: 15px; line-height: 15px; position: relative; font-family: arial; }
+.PCDatiSchedina .PCDatiItem .PCItemDX { position: absolute; right: 5px; }
+.PCDatiSchedina .PCDatiItem .PCItemSX { left: 5px; position: absolute; text-transform: uppercase; }
+
+.PCDatiEventi { background-color: #FFFFFF; border: 1px solid #000; margin: 10px 0 0 0; }
+.PCDatiEventi .PCTitleTipoSco { height: 18px; border-bottom: 1px solid #000; }
+.PCDatiEventi .PCTitleTipoSco DIV { font-weight: bold; font-size: 12px; line-height: 18px; color: #000; text-align: center; text-transform: uppercase; }
+
+.PCEventsItem { border-bottom: 1px dotted #CCC; }
+.PCEventsItem .PCMainEvent { position: relative; width: 100%; padding-left: 2px; border-top: 1px solid #000; display: block; }
+.PCEventsItem .PCGruppo { font-family: Arial; font-size: 9px; line-height: 13px; text-align: left; padding-left: 30px; display: block; }
+.PCEventsItem .PCEvento { font-family: Arial; font-size: 11px; line-height: 13px; text-align: left; padding-left: 30px; display: block; }
+.PCEventsItem .PCSEvento { font-family: Arial; line-height: 12px; font-size: 11px; text-align: left; display: block; font-weight: bold; }
+.PCEventsItem .PCCodPub { position: absolute; top: 3px; left: 2px; font-family: Arial; font-size: 11px; width: 25px; text-align: center; height: 10px; line-height: 11px; }
+.PCEventsItem .PCOdds { border-left: 1px solid #000; border-top: 1px solid #000; padding: 0 2px; }
+
+.PCEventsItem .PCData { font-family: Arial; font-size: 10px; line-height: 10px; white-space: pre-wrap; padding: 0 2px; text-align: center; border-top: 1px dotted #000; }
+.PCEventsItem .PCSegno { font-family: Arial; font-size: 10px; position: absolute; left: 0; bottom: 0; width: 50px; height: 30px; text-align: center; overflow: hidden; line-height: 10px; }
+.PCEventsItem .PCSegno TABLE { height: 30px; font-family: Arial; width: 50px; }
+.PCEventsItem .PCQuota { font-size: 11px; position: absolute; right: 0; bottom: 0; line-height: 30px; height: 30px; text-align: center; width: 35px; }
+.PCDatiEventi .PCItemsOdds { height: 30px; position: relative; width: 88px; }
+.PCEventsItem .PCBankerBG { display: none; }
+.PCEventsItem .PCBanker { font-size: 9px; height: 30px; line-height: 30px; font-weight: bold; width: 10px; text-align: center; position: absolute; top: 0; right: 0px; color: #000000; }
+.PCEventsItem .PCSegnoCap { display: none; }
+.PCItemSep { clear: both; margin: 0; }
+.PCDatiEventiCnt { padding: 0; }
+
+.PCRaggr { background-color: #FFFFFF; border: 1px solid #000000; margin: 0 0 10px 0; }
+.PCRaggrItem { position: relative; border-bottom: 1px solid #000000; height: 14px; font-size: 10px; }
+.PCRaggrItem .PCRaggrGR { position: absolute; line-height: 15px; top: 0; left: 0; width: 50px; border-right: 1px solid #000000; text-align: center; }
+.PCRaggrItem .PCRaggrCombo { position: absolute; line-height: 15px; top: 0; left: 55px; width: 110px; border-right: 1px solid #000000; text-align: center; }
+.PCRaggrItem .PCRaggrWin { position: absolute; line-height: 15px; top: 0; right: 0; padding-right: 3px; }
+
+.PCDisclaimer { font-weight: normal; border: 1px solid #000000; padding: 2px; font-size: 12px; text-align: center; margin: 0px; }
+
+.PCBarcode { width: 253px; text-align: center; border: 1px solid #000; margin-top: 10px; padding: 5px 0; }
+.PCBarcode img { width: 230px; }
+.PCDatiHeader { font-size: 12px; border-bottom: 2px solid #000000; text-align: center; font-weight: bold; text-transform: uppercase; }
+.PCDatiSubHeader { font-size: 12px; text-align: center; font-weight: bold; text-transform: uppercase; height: 12px; line-height: 12px; position: relative; }
+.PCDatiSubHeader .b { display: block; text-align: center; top: 0; right: 0px; width: 10px; position: absolute; }
+.PCDatiHeader .e { text-align: center; padding-left: 2px; }
+.PCDatiSubHeader .s { display: block; border-left: 1px solid #000000; text-align: center; right: 46px; bottom: 0px; width: 40px; position: absolute; }
+.PCDatiSubHeader .q { display: block; border-left: 1px solid #000000; border-right: 1px solid #000000; text-align: center; right: 10px; bottom: 0px; width: 35px; position: absolute; }
+
+.spacer10 { clear: both; height: 10px; }
+
+.PCdisclaimerBonus { border: 1px solid #000000; border-top: 0; padding: 3px 5px; text-align: center; font-size: 10px; clear: both; }
+
+.PCDatiPuntata .PCDatiItemLast { font-weight: bold; font-size: 14px; text-align:center; line-height: 35px; position: relative; text-transform: capitalize; border:2px solid #000000 }

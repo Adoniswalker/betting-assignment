@@ -1,0 +1,33 @@
+Type.registerNamespace('ISBets.WebPages.Controls');
+ISBets.WebPages.Controls.ScoRiservaWS=function() {
+ISBets.WebPages.Controls.ScoRiservaWS.initializeBase(this);
+this._timeout = 0;
+this._userContext = null;
+this._succeeded = null;
+this._failed = null;
+}
+ISBets.WebPages.Controls.ScoRiservaWS.prototype={
+_get_path:function() {
+ var p = this.get_path();
+ if (p) return p;
+ else return ISBets.WebPages.Controls.ScoRiservaWS._staticInstance.get_path();},
+GetScoRiserva:function(IDUtente,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'GetScoRiserva',true,{IDUtente:IDUtente},succeededCallback,failedCallback,userContext); }}
+ISBets.WebPages.Controls.ScoRiservaWS.registerClass('ISBets.WebPages.Controls.ScoRiservaWS',Sys.Net.WebServiceProxy);
+ISBets.WebPages.Controls.ScoRiservaWS._staticInstance = new ISBets.WebPages.Controls.ScoRiservaWS();
+ISBets.WebPages.Controls.ScoRiservaWS.set_path = function(value) { ISBets.WebPages.Controls.ScoRiservaWS._staticInstance.set_path(value); }
+ISBets.WebPages.Controls.ScoRiservaWS.get_path = function() { return ISBets.WebPages.Controls.ScoRiservaWS._staticInstance.get_path(); }
+ISBets.WebPages.Controls.ScoRiservaWS.set_timeout = function(value) { ISBets.WebPages.Controls.ScoRiservaWS._staticInstance.set_timeout(value); }
+ISBets.WebPages.Controls.ScoRiservaWS.get_timeout = function() { return ISBets.WebPages.Controls.ScoRiservaWS._staticInstance.get_timeout(); }
+ISBets.WebPages.Controls.ScoRiservaWS.set_defaultUserContext = function(value) { ISBets.WebPages.Controls.ScoRiservaWS._staticInstance.set_defaultUserContext(value); }
+ISBets.WebPages.Controls.ScoRiservaWS.get_defaultUserContext = function() { return ISBets.WebPages.Controls.ScoRiservaWS._staticInstance.get_defaultUserContext(); }
+ISBets.WebPages.Controls.ScoRiservaWS.set_defaultSucceededCallback = function(value) { ISBets.WebPages.Controls.ScoRiservaWS._staticInstance.set_defaultSucceededCallback(value); }
+ISBets.WebPages.Controls.ScoRiservaWS.get_defaultSucceededCallback = function() { return ISBets.WebPages.Controls.ScoRiservaWS._staticInstance.get_defaultSucceededCallback(); }
+ISBets.WebPages.Controls.ScoRiservaWS.set_defaultFailedCallback = function(value) { ISBets.WebPages.Controls.ScoRiservaWS._staticInstance.set_defaultFailedCallback(value); }
+ISBets.WebPages.Controls.ScoRiservaWS.get_defaultFailedCallback = function() { return ISBets.WebPages.Controls.ScoRiservaWS._staticInstance.get_defaultFailedCallback(); }
+ISBets.WebPages.Controls.ScoRiservaWS.set_enableJsonp = function(value) { ISBets.WebPages.Controls.ScoRiservaWS._staticInstance.set_enableJsonp(value); }
+ISBets.WebPages.Controls.ScoRiservaWS.get_enableJsonp = function() { return ISBets.WebPages.Controls.ScoRiservaWS._staticInstance.get_enableJsonp(); }
+ISBets.WebPages.Controls.ScoRiservaWS.set_jsonpCallbackParameter = function(value) { ISBets.WebPages.Controls.ScoRiservaWS._staticInstance.set_jsonpCallbackParameter(value); }
+ISBets.WebPages.Controls.ScoRiservaWS.get_jsonpCallbackParameter = function() { return ISBets.WebPages.Controls.ScoRiservaWS._staticInstance.get_jsonpCallbackParameter(); }
+ISBets.WebPages.Controls.ScoRiservaWS.set_path("/Controls/ScoRiservaWS.asmx");
+ISBets.WebPages.Controls.ScoRiservaWS.GetScoRiserva= function(IDUtente,onSuccess,onFailed,userContext) {ISBets.WebPages.Controls.ScoRiservaWS._staticInstance.GetScoRiserva(IDUtente,onSuccess,onFailed,userContext); }

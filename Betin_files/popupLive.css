@@ -1,0 +1,21 @@
+﻿.divLivePopupCalendar { background-image: url('images/calendarPopupTitle.jpg'); height: 50px; width: 382px; }
+.divLivePopupHelp { background-image: url('images/helpPopupTitle.jpg'); height: 50px; width: 382px; }
+.divLivePopupMain { }
+.divLivePopupMain ul { list-style-type: none; margin: 4px 0 4px 0; padding: 0; }
+.divLivePopupMain ul li { margin: 10px 0 0 0; font-size: 14px; line-height: 14px; font-weight: bold; color: #ff0000; text-align: center; }
+.divLivePopupMain ul li ul { }
+.divLivePopupMain ul li ul li { margin: 3px 10px 0 10px; padding: 3px; color: #000; font-size: 12px; line-height: 12px; height: 16px; font-weight: normal; text-align: left; background-color: #fff; }
+.livePopIncontro { position: relative; }
+.livePopIconaSport { background-position: center center; background-repeat: no-repeat; position: absolute; top: 0; left: 0; width: 20px; height: 20px; }
+.livePopOra { position: absolute; left: 25px; top: 2px; font-weight: bold; }
+.livePopEvento { position: absolute; top: 2px; left: 66px; }
+.divLivePopupHelpTitle { padding: 10px 0 0 20px; font-size: 15px; font-weight: bold; color: #ffbb03; }
+.liveHelpMenu { text-align: center; background-image: url(images/ImgTop_MenuHelp_bg.png); background-repeat: no-repeat; background-position: center center; height: 26px; line-height: 26px; width: 382px; }
+.liveHelpMenu A { padding: 0 5px; color: #FFF; text-decoration: none; font-weight: bold; font-size: 11px; }
+.liveHelpMenu A:hover { color: #457cc0; }
+.divLivePopupText { padding: 0 20px 5px 20px; text-align: justify; }
+.divLivePopupText .divFlash { padding: 0 0 10px 0; font-size: 11px; font-style: italic; color: #cccccc; }
+.divLivePopupText .divFlash a { color: #ffffff; text-decoration: none; }
+.divLivePopupText .divFlash a:hover { color: #ffbb03; text-decoration: underline; }
+.divLiveList { margin: 15px 0 0 0; padding: 0 0 0 15px; }
+.divLiveList li { margin: 10px 0 0 0; }

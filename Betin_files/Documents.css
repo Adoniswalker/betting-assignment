@@ -1,0 +1,33 @@
+﻿.ContenitoreDocument { border: 1px solid #dadada; padding: 0px; margin: 0px 0px 5px 0px; background-color: #ffffff; }
+.HeaderDocument { position: relative; height: 82px; overflow: hidden; background-image: url('images/document_bg.png'); background-repeat: no-repeat; background-position: left top; }
+.HeaderSxDocument { position: absolute; top: 0; left: 0; }
+.HeaderSxDocument img { margin: 5px; }
+.HeaderDxDocument { width: 395px; height: 77px; position: absolute; right: 0px; top: 5px; }
+.HeaderTitoloDocument {
+    display:block;
+    text-transform:uppercase;
+    font-size:12px;
+    font-weight:bold;
+    margin:0 0 5px 0;
+    color:#4f86d0;
+    width:390px;
+    height:18px;
+    line-height:18px;
+    background-image:url('images/documents_line.png');
+    background-repeat:no-repeat;
+    background-position:left bottom;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+.HeaderTestoDocument { display: block; font-size: 11px; padding: 3px; width: 384px; height: 50px; overflow: hidden; color: #000000; }
+.CloseContentDocument,
+.downloadBtn { font-size: 11px; font-weight: bold; text-align: right; cursor: pointer; padding: 0 15px 0 0; background-image: url('images/Icons/detail_up.png'); background-position: right; background-repeat: no-repeat; margin: 0 7px 5px 0; }
+.downloadBtn { background-image: url('images/Icons/down-icon-small.png'); position: absolute; bottom: 0px; right: 0px; }
+.downloadBtn a { text-decoration: none; color: #000000; }
+.documentsBtn { position: absolute; bottom: 0px; right: 0px; background-image: url('images/documentsBtn.png'); background-position: right; background-repeat: no-repeat; width: 100px; height: 26px; z-index: 1; }
+#g_w_PC_ctl01_upDocumenti br { font-size: 0px; line-height: 0px; }
+.ContentDocumentImage { }
+.ContentDocumentHtml { padding: 0 10px 20px 10px; }
+#divTitolo { background-color: Black; height: 18px; line-height: 18px; font-weight: bold; color: #ffbb03; font-size: 11px; text-transform: uppercase; text-align: center; margin: 0 0 0px 0; }
+.DocumentsVuoto { width: 541px; text-align: center; font-weight: bold; color: #FFFFFF; }

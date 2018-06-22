@@ -1,0 +1,17 @@
+﻿/******************** STAMPA  **********************************/
+.GirocontoCoupon { margin: 0; padding: 0; font-family: Arial; font-size: 11px; }
+.GPMainDiv { width: 255px; border: 1px solid #000000; }
+.GPLogo { text-align: center; margin: 0 0 5px 0; height: 50px; }
+.GPTitle { background-color: #000000; color: #FFFFFF; text-align: center; text-transform: uppercase; font-weight: bold; padding: 2px 0; }
+.GPDatiGiroconto { background-color: #FFFFFF; padding: 3px 4px 3px 4px; margin: 0 0 0 0; }
+.GPDatiGiroconto .GPDatiItem { border-top: 1px solid #c7c7c7; font-size: 12px; height: 15px; line-height: 15px; position: relative; }
+.GPDatiGiroconto .GPDatiItem .GPItemDX { position: absolute; right: 0; }
+.GPDatiGiroconto .GPDatiItem .GPItemSX { position: absolute; text-transform: uppercase; }
+.GPDisclaimer { background-color: #FFFFFF; margin: 0 0 0 0; font-size: 8px; text-align: center; padding: 5px; font-size: 12px; border-top: 1px solid #ccc; }
+.GPBarcode { height: 38px; text-align: center; margin: 0 0 0px 0; border: 1px solid #000000; padding: 3px; }
+.GPBarcode IMG { width: 247px; height: 38px; }
+
+/*CAMBIO*/
+.GPCambio { font-size: 22px; font-weight: bold; font-style: italic; text-align: center; line-height: 35px; border-top: 1px solid #c7c7c7; }
+.GPDatiGiroconto .GPDatiItem.Cambio .GPItemSX { line-height: 35px; }
+.GPDatiGiroconto .GPDatiItem.Cambio { border: 0; }

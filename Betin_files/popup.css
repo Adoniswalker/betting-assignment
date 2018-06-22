@@ -1,0 +1,61 @@
+﻿#backgroundPopup,
+#backgroundRSSPopup {
+	display:none;
+	position:fixed;
+	_position:absolute; /* hack for internet explorer 6*/
+	height:100%;
+	width:100%;
+	top:0;
+	left:0;
+	background:#000000;
+	border:1px solid #cecece;
+	z-index:2100;
+}
+#popupContact,
+#popupRSSContact,
+#popupAnnullamento,
+#popupBetDetail {
+	display:none;
+	position:fixed;
+	_position:absolute; /* hack for internet explorer 6*/
+	height:384px;
+	width:408px;
+	border:1px solid #000000;
+	z-index:2300;
+	font-size:12px;
+}
+#popupContact .NewsTitle,
+#popupRSSContact .NewsTitle { height: 25px; position: relative; font-size: 12px; color: #FFFFFF; background-color: #303030; }
+#popupContact .NewsTitle .sezTitolo,
+#popupRSSContact .NewsTitle .sezTitolo { color: #FFFFFF; text-align: left; font-size: 12px; font-weight: bold; padding: 5px 0 4px 8px; position: absolute; left: 0; }
+#popupRSSContact .NewsTitle .sezTitolo { overflow: hidden; width: 375px; height: 13px; }
+#popupContact .NewsTitle .sezBtn,
+#popupRSSContact .NewsTitle .sezBtn,
+#popupAnnullamento .sezBtn,
+#popupBetDetail .sezBtn { position: absolute; right: 0px; top: 2px; font-size: 0px; width: 30px; text-align: right; }
+
+#popupContact .NewsTitle .sezBtn A, #popupRSSContact .NewsTitle .sezBtn A,
+#popupAnnullamento .sezBtn A, #popupBetDetail .sezBtn A { cursor: pointer; }
+#popupRSSContact .NewsTitle .RSSCategory { display: none; }
+#popupContact .NewsContent, #popupRSSContact .NewsContent { height: 359px; overflow: auto; background-color: #ffffff; }
+#popupContact #contactArea, #popupRSSContact #contactArea { float: left; margin: 10px; }
+
+#popupContact .NewsContentText { margin: 10px; }
+#popupRSSContact .NewsContentText { margin: 10px; font-weight: bold; }
+#popupRSSContact .NewsContentText B { display: block; font-weight: normal; }
+
+#popupContactClose,
+#popupRSSContactClose,
+#popupAnnullamentoClose { font-size: 12px; line-height: 14px; right: 6px; top: 4px; position: absolute; color: #6fa5fd; font-weight: 700; display: block; }
+#button { text-align: center; margin: 100px; }
+#popupContact .Img,
+#popupRSSContact .Img { vertical-align: top; height: 20px; text-align: center; font-size: 10px; padding: 5px 5px 0 5px; color: #6b6b6b; }
+#popupContact #divNewsBody,
+#popupRSSContact #divNewsBody { padding: 0 0 0 10px; color: #21304d; font-size: 12px; }
+#popupAnnullamento { width: 600px; height: 270px; }
+#popupAnnullamento IFRAME { }
+
+#popupBetDetail { height:600px; width:800px; }
+#popupBetDetail .sezBtn { right: 15px; }
+#popupBetDetailClose { font-size: 12px; line-height: 14px; right: 6px; top: 4px; position: absolute; color: #6fa5fd; font-weight: 700; display: block; }
+#popupBetDetail IFRAME { }
